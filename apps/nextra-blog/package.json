@@ -1,0 +1,26 @@
+{
+  "name": "nextra-blog",
+  "version": "0.0.0",
+  "description": "Nextra blog setup",
+  "keywords": [
+    "nextra",
+    "blog"
+  ],
+  "author": "shawn <shawnsandy04@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/nextra-blog.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "nextra": "^2.2.19"
+  }
+}

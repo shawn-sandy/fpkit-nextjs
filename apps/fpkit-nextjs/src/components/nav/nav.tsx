@@ -3,44 +3,54 @@
  *
  * The Nav component is used to wrap a group of links that are related
  * to each other. The Nav component is used by the Header component.
- *
- * @param {NavProps} props
- * @returns {JSX.Element}
  */
 
 import React, { Children } from "react";
 
 import { Tag } from "@fpkit/react";
+import Link from "next/link";
+
+export type NavItemProps = {
+  route: string;
+  children: React.ReactNode;
+};
+
+/**
+ * NavItem component creates a navigation link element wrapped in a list item `li`
+ * @param param0
+ * @returns
+ */
+export const NavItem = ({ route, children, ...props }: NavItemProps) => {
+  return (
+    <>
+      <Tag as="li" {...props}>
+        <Link href={route}>{children}</Link>
+      </Tag>
+    </>
+  );
+};
 
 export type NavProps = {
   children?: React.ReactNode;
 };
 
-export const Nav = ({ children }: NavProps) => {
-  return (
-    <>
-      <Tag as="nav">{children}</Tag>
-    </>
-  );
-};
-
-export default Nav;
-Nav.displayName = "Nav";
-
 /**
- * NavItem component
- * Creates a list item for the Nav component
+ * Nav component creates a navigation element
  * @param param0
  * @returns
  */
-
-export type NavItemProps = {
-  children?: React.ReactNode;
-};
-export const NavItem = ({ children }: NavProps) => {
+export const Nav = ({ children, ...props }: NavProps) => {
   return (
     <>
-      <Tag as="li">{children}</Tag>
+      <Tag as="nav" {...props}>
+        {children}
+      </Tag>
     </>
   );
 };
+
+/**
+ * Exports
+ */
+export default Nav;
+Nav.displayName = "Nav";

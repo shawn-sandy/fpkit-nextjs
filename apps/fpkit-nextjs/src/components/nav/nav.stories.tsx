@@ -1,14 +1,16 @@
 import { StoryObj, Meta } from "@storybook/react";
 
-import { within, userEvent } from "@storybook/testing-library";
+// import { within, userEvent } from "@storybook/testing-library";
 
-import { expect } from "@storybook/jest";
+// import { expect } from "@storybook/jest";
 
-import Nav from "./nav";
+import Nav, { NavItem } from "./nav";
 
 const meta: Meta<typeof Nav> = {
   title: "Nextra Components/Nav",
   component: Nav,
+  //@ts-ignore
+  subcomponents: { NavItem },
 };
 
 export default meta;
@@ -31,5 +33,19 @@ const navList = (
 export const BaseNav: Story = {
   args: {
     children: navList,
+  },
+};
+
+const navListItems = (
+  <ul>
+    <NavItem route="/about">About</NavItem>
+    <NavItem route="/blog">Blog</NavItem>
+    <NavItem route="/contact">Contact</NavItem>
+  </ul>
+);
+
+export const NavItems: Story = {
+  args: {
+    children: navListItems,
   },
 };

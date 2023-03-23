@@ -26,3 +26,21 @@ export const Nav = ({ children }: NavProps) => {
 
 export default Nav;
 Nav.displayName = "Nav";
+
+/**
+ * NavItem component
+ * Creates a list item for the Nav component
+ * @param param0
+ * @returns
+ */
+
+export type NavItemProps = {
+  children?: React.ReactNode;
+};
+export const NavItem = ({ children }: NavProps) => {
+  return (
+    <>
+      <Tag as="li">{children}</Tag>
+    </>
+  );
+};

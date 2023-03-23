@@ -1,4 +1,5 @@
 import type { Preview } from "@storybook/react";
+import '@shawnsandy/first-paint/dist/css/libs/all.min.css'
 
 const preview: Preview = {
   parameters: {

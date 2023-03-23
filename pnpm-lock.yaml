@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@shawnsandy/first-paint': ^2.17.45
   '@storybook/addon-a11y': ^6.5.16
   '@storybook/addon-actions': ^6.5.16
   '@storybook/addon-coverage': ^0.0.4
@@ -33,6 +34,7 @@ specifiers:
   vite: ^4.2.1
 
 dependencies:
+  '@shawnsandy/first-paint': 2.17.45
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
 
@@ -3662,6 +3664,10 @@ packages:
       estree-walker: 2.0.2
       picomatch: 2.3.1
     dev: true
+
+  /@shawnsandy/first-paint/2.17.45:
+    resolution: {integrity: sha512-dgrQfreZUdXZdkchNFcIWZIbCRmWB3ZX6piLPtspE+YnhZTA5YLnNoxmxWbIW4tne75XXbTlurp0jgUW5S74TA==}
+    dev: false
 
   /@sideway/address/4.1.4:
     resolution: {integrity: sha512-7vwq+rOHVWjyXxVlR76Agnvhy8I9rpzjosTESvmhNeXOXdZZB15Fl+TI9x1SiHZH5Jv2wTGduSxFDIaq0m3DUw==}

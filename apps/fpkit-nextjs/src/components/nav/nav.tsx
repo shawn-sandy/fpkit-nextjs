@@ -5,7 +5,7 @@
  * to each other. The Nav component is used by the Header component.
  */
 
-import React, { Children } from "react";
+import React from "react";
 
 import { Tag } from "@fpkit/react";
 import Link from "next/link";
@@ -24,7 +24,7 @@ export const NavItem = ({ route, children, ...props }: NavItemProps) => {
   return (
     <>
       <Tag as="li" {...props}>
-        <Link href={route}>{children}</Link>
+        <a href={route}>{children}</a>
       </Tag>
     </>
   );

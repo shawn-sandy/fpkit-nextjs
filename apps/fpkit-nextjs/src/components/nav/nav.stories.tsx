@@ -9,8 +9,6 @@ import Nav, { NavItem } from "./nav";
 const meta: Meta<typeof Nav> = {
   title: "Nextra Components/Nav",
   component: Nav,
-  //@ts-ignore
-  subcomponents: { NavItem },
 };
 
 export default meta;

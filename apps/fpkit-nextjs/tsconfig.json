@@ -22,7 +22,8 @@
   },
   "include": [
     "src",
-    "src/setupTest.ts"
+    "src/setupTest.ts",
+    "vite.config.js"
   ],
   "references": [
     {

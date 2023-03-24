@@ -1,14 +1,20 @@
 import { StoryObj, Meta } from "@storybook/react";
 
-// import { within, userEvent } from "@storybook/testing-library";
-
-// import { expect } from "@storybook/jest";
+import { within } from "@storybook/testing-library";
+import { expect } from "@storybook/jest";
 
 import Nav, { NavItem } from "./nav";
 
 const meta: Meta<typeof Nav> = {
   title: "Nextra Components/Nav",
   component: Nav,
+  // @ts-ignore
+  subcomponents: { NavItem },
+  argTypes: {
+    children: {
+      control: { type: "object" },
+    },
+  },
 };
 
 export default meta;
@@ -45,5 +51,10 @@ const navListItems = (
 export const NavItems: Story = {
   args: {
     children: navListItems,
+  },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    const aboutLink = canvas.getByRole("link", { name: "About" });
+    expect(aboutLink).toHaveAttribute("href", "/about");
   },
 };

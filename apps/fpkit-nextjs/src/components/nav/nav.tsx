@@ -4,6 +4,7 @@ import { Tag } from "@fpkit/react";
 
 export type NavItemProps = {
   route: string;
+  styles?: {};
   children?: React.ReactNode;
 };
 
@@ -12,7 +13,12 @@ export type NavItemProps = {
  * @param param0
  * @returns
  */
-export const NavItem = ({ route, children, ...props }: NavItemProps) => {
+export const NavItem = ({
+  route,
+  styles,
+  children,
+  ...props
+}: NavItemProps) => {
   return (
     <>
       <Tag as="li" {...props}>

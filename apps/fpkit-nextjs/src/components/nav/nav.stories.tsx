@@ -42,9 +42,11 @@ export const BaseNav: Story = {
 
 const navListItems = (
   <ul>
-    <NavItem route="/about">About</NavItem>
-    <NavItem route="/blog">Blog</NavItem>
-    <NavItem route="/contact">Contact</NavItem>
+    <li>
+      <NavItem route="/about">About</NavItem>
+      <NavItem route="/blog">Blog</NavItem>
+      <NavItem route="/contact">Contact</NavItem>
+    </li>
   </ul>
 );
 

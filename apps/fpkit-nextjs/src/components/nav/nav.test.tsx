@@ -11,5 +11,6 @@ describe("App renders correctly", () => {
     const nav = screen.getByRole("navigation");
     expect(nav).toBeDefined();
     expect(await axe(nav)).toHaveNoViolations();
+    expect(nav).toMatchSnapshot();
   });
 });

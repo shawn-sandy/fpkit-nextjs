@@ -15,9 +15,9 @@ export const Navbar = ({ navList }: NavListTypes) => {
   return (
     <Nav>
       <Tag as="ul">
-        {navList.map((navItem, index) => {
+        {navList.map((navItem) => {
           return (
-            <NavItem route={navItem.url} key={`${navItem.url}-${index}`}>
+            <NavItem route={navItem.url} key={React.useId()}>
               {navItem.name}
             </NavItem>
           );

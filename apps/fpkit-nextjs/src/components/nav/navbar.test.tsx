@@ -6,7 +6,7 @@ import { expect, describe, test } from "vitest";
 
 import Navbar from "./navbar";
 
-describe("App renders correctly", () => {
+describe("Nav renders correctly", () => {
   test("renders without crashing", async () => {
     const navList = [
       {

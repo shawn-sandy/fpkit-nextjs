@@ -18,10 +18,10 @@
     "preview": "vite preview",
     "package": "tsc && tsup --dts",
     "package:watch": "tsup --watch --dts",
-    "test": "vite",
-    "test:watch": "vitest --watch",
-    "test:ci": "c8 jest --ci --coverage",
-    "test:update": "vite -u"
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:ci": "c8 vitest --ci --coverage",
+    "test:update": "vitest -u"
   },
   "dependencies": {
     "@fpkit/react": "^0.2.62",

@@ -2,6 +2,7 @@ import { StoryObj, Meta } from "@storybook/react";
 
 import { within } from "@storybook/testing-library";
 import { expect } from "@storybook/jest";
+import { axe } from "vitest-axe";
 
 import Nav, { NavItem } from "./nav";
 

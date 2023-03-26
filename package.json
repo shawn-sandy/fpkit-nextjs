@@ -9,7 +9,10 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "publish": "lerna publish patch --no-private --conventional-commits -m \"chore(next): publish next release \""
+    "publish": "lerna publish patch --no-private --conventional-commits -m \"chore(next): publish release \"",
+    "publish:next": "lerna publish patch --no-private --conventional-commits -m \"chore(next): publish next release \"",
+    "publish:minor": "lerna publish minor --no-private --conventional-commits -m \"chore(next): publish release \"",
+    "publish:release": "lerna publish major --no-private --conventional-commits -m \"chore(next): publish release \""
   },
   "dependencies": {
     "@shawnsandy/first-paint": "^2.17.45",

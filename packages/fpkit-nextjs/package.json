@@ -12,6 +12,9 @@
     "src",
     "dist"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -63,5 +66,6 @@
     "vite-plugin-dts": "^1.7.3",
     "vitest": "^0.15.2",
     "vitest-axe": "^0.1.0"
-  }
+  },
+  "gitHead": "1d70ce0769418bca1e398804a6ee975510e49097"
 }

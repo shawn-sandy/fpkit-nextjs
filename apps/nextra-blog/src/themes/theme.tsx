@@ -1,27 +1,20 @@
-import type { NextraThemeLayoutProps } from 'nextra'
-import React from 'react'
-import Link from 'next/link'
+import type { NextraThemeLayoutProps } from "nextra";
+import React from "react";
 
-import "@shawnsandy/first-paint/dist/css/libs/all.min.css"
+import Nav from "../components/nav";
+import { MainHeader, ThemeHeader, ThemeFooter } from "@fpkit/nextjs";
 
- 
+import "@shawnsandy/first-paint/dist/css/libs/all.min.css";
+
 export default function Layout({ children, pageOpts }: NextraThemeLayoutProps) {
-  const { pageMap } = pageOpts
- 
+  const { pageMap } = pageOpts;
+
   return (
-    <div>
-      <h1>My Theme</h1>
-      {pageMap.map((item) => {
-        if (item.kind === 'MdxPage') {
-          return (
-            <Link key={item.name} href={item.route}>
-              {item.route}
-            </Link>
-          )
-        }
-        return null
-      })}
-      <div style={{ border: '1px solid' }}>{children}</div>
-    </div>
-  )
+    <>
+      <Nav />
+      <ThemeHeader title="FPKIT.NEXT" />
+      <MainHeader>{children}</MainHeader>
+      <ThemeFooter />
+    </>
+  );
 }

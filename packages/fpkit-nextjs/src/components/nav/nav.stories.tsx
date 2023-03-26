@@ -42,11 +42,9 @@ export const BaseNav: Story = {
 
 const navListItems = (
   <ul>
-    <li>
-      <NavItem route="/about">About</NavItem>
-      <NavItem route="/blog">Blog</NavItem>
-      <NavItem route="/contact">Contact</NavItem>
-    </li>
+    <NavItem route="/about">About</NavItem>
+    <NavItem route="/blog">Blog</NavItem>
+    <NavItem route="/contact">Contact</NavItem>
   </ul>
 );
 
@@ -57,6 +55,7 @@ export const NavItems: Story = {
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
     const aboutLink = canvas.getByRole("link", { name: "About" });
-    expect(aboutLink).toHaveAttribute("href", "/about");
+    const links = canvas.getAllByRole("link");
+    expect(links).toHaveLength(3);
   },
 };

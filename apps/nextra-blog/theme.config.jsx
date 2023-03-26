@@ -1,6 +1,14 @@
 // import { DocsThemeConfig } from 'nextra-theme-docs'
 export default {
-  logo: <span>Nextra Base</span>,
+  logo: (
+    <h1>
+      <span>Nextra Base</span>
+    </h1>
+  ),
+  brand: {
+    logo: <span>Nextra Base</span>,
+    url: "/",
+  },
   project: {
     link: "https://github.com/shuding/nextra-docs-template",
   },

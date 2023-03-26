@@ -6,12 +6,16 @@ import { ThemeMain, ThemeHeader, ThemeFooter } from "@fpkit/nextjs";
 
 import "@shawnsandy/first-paint/dist/css/libs/all.min.css";
 
-export default function Layout({ children, pageOpts }: NextraThemeLayoutProps) {
+export default function Layout({
+  children,
+  pageOpts,
+  themeConfig,
+}: NextraThemeLayoutProps) {
   const { pageMap } = pageOpts;
 
   return (
     <>
-      <Nav />
+      <Nav brand={themeConfig.brand} />
       <ThemeHeader title="FPKIT.NEXT" ctaLink="/" ctaLabel="" />
       <ThemeMain>{children}</ThemeMain>
       <ThemeFooter />

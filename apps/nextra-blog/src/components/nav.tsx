@@ -1,20 +1,20 @@
-import { Navbar } from'@fpkit/nextjs';
-import React from 'react';
+import { Navbar } from "@fpkit/nextjs";
+import React from "react";
 
-export default function Nav() {
+export default function Nav({ brand }) {
   const navList = [
     {
-      url: '/home',
-      name: 'Home',
+      url: "/home",
+      name: "Home",
     },
     {
-      url: '/about',
-      name: 'About',
+      url: "/about",
+      name: "About",
     },
     {
-      url: '/contact',
-      name: 'Contact',
+      url: "/contact",
+      name: "Contact",
     },
   ];
-  return <Navbar navList={navList} />;
+  return <Navbar brand={brand} navList={navList} />;
 }

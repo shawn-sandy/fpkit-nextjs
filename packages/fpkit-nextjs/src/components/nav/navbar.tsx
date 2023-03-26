@@ -3,7 +3,7 @@ import { Tag, Text, Title } from "@fpkit/react";
 import Nav, { NavItem } from "./nav";
 
 export type NavbarProps = {
-  url: string;
+  route: string;
   name: string;
 };
 
@@ -21,7 +21,11 @@ export const Navbar = ({ navList, brand }: NavListTypes) => {
       <Tag as="div">
         {!!brand && (
           <Title elm="h1" styles={{ "--fs": "1.5rem" }}>
-            <Tag as="a" href={brand.url}>
+            <Tag
+              as="a"
+              href={brand.url}
+              styles={{ textTransform: "capitalize" }}
+            >
               {brand.logo}
             </Tag>
           </Title>
@@ -30,7 +34,7 @@ export const Navbar = ({ navList, brand }: NavListTypes) => {
       <Tag as="ul">
         {navList.map((navItem) => {
           return (
-            <NavItem route={navItem.url} key={React.useId()}>
+            <NavItem route={navItem.route} key={React.useId()}>
               {navItem.name}
             </NavItem>
           );

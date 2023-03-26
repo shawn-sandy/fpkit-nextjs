@@ -4,7 +4,7 @@ import React from "react";
 /** set types  */
 export interface HeaderProps {
   title: React.ReactNode;
-  ctaLink: string;
+  ctaLink?: string;
   ctaLabel?: React.ReactNode;
   children?: React.ReactNode;
 }

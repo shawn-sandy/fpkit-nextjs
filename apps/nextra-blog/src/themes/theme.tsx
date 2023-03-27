@@ -12,7 +12,7 @@ export default function Layout({
   themeConfig,
 }: NextraThemeLayoutProps) {
   const { pageMap } = pageOpts;
-  // @ts-ignore
+
   const { dirList, postList } = usePageOpts({ options: { pageOpts } });
   console.log({ dirList });
 

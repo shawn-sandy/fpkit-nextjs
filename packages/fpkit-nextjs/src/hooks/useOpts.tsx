@@ -1,7 +1,7 @@
 import { PageOpts, NextraThemeLayoutProps } from "nextra";
 
 export type optsTypes = {
-  options: NextraThemeLayoutProps;
+  options: Pick<NextraThemeLayoutProps, "pageOpts">;
 };
 
 export const usePageOpts = ({ options }: optsTypes) => {

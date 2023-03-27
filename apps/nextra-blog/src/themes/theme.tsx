@@ -18,7 +18,7 @@ export default function Layout({
   return (
     <>
       <Nav brand={themeConfig.brand} navList={dirList} />
-      <ThemeHeader title="FPKIT.NEXT" ctaLink="/" ctaLabel="" />
+      <ThemeHeader title="FPKit Next" ctaLink="/" ctaLabel="" />
       <ThemeMain>{children}</ThemeMain>
       <ThemeFooter />
     </>

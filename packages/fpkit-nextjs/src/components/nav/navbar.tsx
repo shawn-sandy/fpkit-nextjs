@@ -20,7 +20,7 @@ export const Navbar = ({ navList, brand }: NavListTypes) => {
     <Nav>
       <Tag as="div">
         {!!brand && (
-          <Title elm="h1" styles={{ "--fs": "1.5rem" }}>
+          <Title elm="h1" styles={{ "--fs": "1.2rem" }}>
             <Tag
               as="a"
               href={brand.url}

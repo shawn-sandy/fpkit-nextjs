@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.8](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.0.7...v0.0.8) (2023-03-27)
+
+### Features
+
+- 🌟 update theme config/opts ([f262762](https://github.com/shawn-sandy/fpkit-nextjs/commit/f262762bb0c40998a0081be1eb05126db729c884))
+
 ## [0.0.7](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.0.6...v0.0.7) (2023-03-27)
 
 ### Features

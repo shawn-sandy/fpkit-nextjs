@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.7](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.0.6...v0.0.7) (2023-03-27)
+
+### Features
+
+- modify useOpts hook ([e318d4e](https://github.com/shawn-sandy/fpkit-nextjs/commit/e318d4e2e4a2667f22c52534879389b0910a004c))
+
 ## [0.0.6](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.0.5...v0.0.6) (2023-03-27)
 
 **Note:** Version bump only for package fpkit-vite

@@ -3,7 +3,7 @@ import React from "react";
 
 import Nav from "../components/nav";
 import { ThemeMain, ThemeHeader, ThemeFooter } from "@fpkit/nextjs";
-import { usePageOpts } from "@fpkit/nextjs";
+import { usePageOpts } from "@fpkit/nextjs/libs/hooks";
 import "@shawnsandy/first-paint/dist/css/libs/all.min.css";
 
 export default function Layout({
@@ -12,6 +12,7 @@ export default function Layout({
   themeConfig,
 }: NextraThemeLayoutProps) {
   const { pageMap } = pageOpts;
+  // @ts-ignore
   const { dirList, postList } = usePageOpts({ options: { pageOpts } });
   console.log({ dirList });
 

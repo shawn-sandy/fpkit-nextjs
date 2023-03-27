@@ -1,7 +1,8 @@
 import { defineConfig } from "tsup";
 
 export default defineConfig({
-  entry: ["src/index.ts"],
+  entry: ["src/index.ts", "src/hooks.ts"],
+  outDir: "libs",
   splitting: true,
   sourcemap: true,
   clean: true,

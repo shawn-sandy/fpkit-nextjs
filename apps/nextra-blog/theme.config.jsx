@@ -6,7 +6,7 @@ export default {
     </h1>
   ),
   brand: {
-    logo: <span>Nextra Base</span>,
+    logo: <span>FPKIT.NEXTRA</span>,
     url: "/",
   },
   project: {

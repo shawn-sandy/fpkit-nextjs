@@ -12,9 +12,8 @@ export default function Layout({
   themeConfig,
 }: NextraThemeLayoutProps) {
   const { pageMap } = pageOpts;
-
   const { dirList, postList } = usePageOpts({ options: { pageOpts } });
-  console.log({ dirList });
+  const posts = postList.map((item) => item?.frontMatter);
 
   return (
     <>

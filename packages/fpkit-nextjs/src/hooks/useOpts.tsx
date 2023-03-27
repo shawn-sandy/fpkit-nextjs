@@ -7,7 +7,7 @@ export type optsTypes = {
 export const usePageOpts = ({ options }: optsTypes) => {
   const { pageOpts } = options;
 
-  const { pageMap, frontMatter } = pageOpts;
+  const { pageMap } = pageOpts;
 
   if (!pageMap) {
     return { contentDirs: [], postList: [], posts: [] };

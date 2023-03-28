@@ -4,7 +4,7 @@ import React from "react";
 
 import Nav from "../components/nav";
 import { ThemeMain, ThemeHeader, ThemeFooter } from "@fpkit/nextjs";
-import { usePageOpts } from "@fpkit/nextjs/libs/hooks";
+import { usePageOpts, useConfig } from "@fpkit/nextjs/libs/hooks";
 import "@shawnsandy/first-paint/dist/css/libs/all.min.css";
 import { MDXProvider } from "nextra/mdx";
 
@@ -16,6 +16,7 @@ export default function Layout({
   const { dirList, postList } = usePageOpts({ options: { pageOpts } });
   const posts = postList.map((item) => item?.frontMatter);
   const banner = themeConfig.banner;
+  console.log(themeConfig.components);
 
   return (
     <>

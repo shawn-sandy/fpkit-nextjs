@@ -1,5 +1,7 @@
-// import { DocsThemeConfig } from 'nextra-theme-docs'
+import { themeComponents } from "@fpkit/nextjs/libs/libs";
+
 export default {
+  // const { frontMatter } = useConfig();
   logo: (
     <h1>
       <span>Nextra Base</span>
@@ -26,7 +28,7 @@ export default {
     text: "Nextra Docs Template",
   },
   components: {
-    h1: ({ children }) => (
+    h2: ({ children }) => (
       <h1
         style={{
           WebkitBackgroundClip: "text",
@@ -38,6 +40,7 @@ export default {
         {children}
       </h1>
     ),
+    ...themeComponents,
   },
   darkMode: true,
 };

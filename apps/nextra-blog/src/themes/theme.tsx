@@ -1,17 +1,18 @@
 import type { NextraThemeLayoutProps } from "nextra";
+import useBlogContext from "nextra-theme-blog";
 import React from "react";
 
 import Nav from "../components/nav";
 import { ThemeMain, ThemeHeader, ThemeFooter } from "@fpkit/nextjs";
 import { usePageOpts } from "@fpkit/nextjs/libs/hooks";
 import "@shawnsandy/first-paint/dist/css/libs/all.min.css";
+import { MDXProvider } from "nextra/mdx";
 
 export default function Layout({
   children,
   pageOpts,
   themeConfig,
 }: NextraThemeLayoutProps) {
-  // @ts-ignore
   const { dirList, postList } = usePageOpts({ options: { pageOpts } });
   const posts = postList.map((item) => item?.frontMatter);
   const banner = themeConfig.banner;
@@ -25,7 +26,11 @@ export default function Layout({
         linkLabel={banner.linkLabel}
         description={banner.description}
       />
-      <ThemeMain>{children}</ThemeMain>
+      <ThemeMain>
+        <MDXProvider components={themeConfig.components}>
+          {children}
+        </MDXProvider>
+      </ThemeMain>
       <ThemeFooter />
     </>
   );

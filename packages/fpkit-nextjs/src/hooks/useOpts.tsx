@@ -1,4 +1,4 @@
-import { PageOpts, NextraThemeLayoutProps } from "nextra";
+import { NextraThemeLayoutProps } from "nextra";
 
 export type optsTypes = {
   options: Pick<NextraThemeLayoutProps, "pageOpts">;

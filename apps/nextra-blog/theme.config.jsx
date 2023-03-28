@@ -1,4 +1,4 @@
-import { themeComponents } from "@fpkit/nextjs/libs/libs";
+import { MDXComponents } from "@fpkit/nextjs/libs/libs";
 
 export default {
   // const { frontMatter } = useConfig();
@@ -40,7 +40,7 @@ export default {
         {children}
       </h1>
     ),
-    ...themeComponents,
+    ...MDXComponents,
   },
   darkMode: true,
 };

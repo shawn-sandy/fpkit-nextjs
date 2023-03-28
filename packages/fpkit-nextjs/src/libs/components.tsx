@@ -3,7 +3,7 @@ type ComponentTypes = {
   children: React.ReactNode | string;
 };
 
-export const themeComponents = {
+export const MDXComponents = {
   h1: ({ children }: ComponentTypes) => (
     <h1
       style={{

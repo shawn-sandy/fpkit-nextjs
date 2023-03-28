@@ -14,15 +14,16 @@ export default function Layout({
   // @ts-ignore
   const { dirList, postList } = usePageOpts({ options: { pageOpts } });
   const posts = postList.map((item) => item?.frontMatter);
-  const cover = themeConfig.banner;
+  const banner = themeConfig.banner;
 
   return (
     <>
       <Nav brand={themeConfig.brand} navList={dirList} />
       <ThemeHeader
-        title={cover.title}
-        link={cover.link}
-        linkLabel={cover.linkLabel}
+        title={banner.title}
+        link={banner.link}
+        linkLabel={banner.linkLabel}
+        description={banner.description}
       />
       <ThemeMain>{children}</ThemeMain>
       <ThemeFooter />

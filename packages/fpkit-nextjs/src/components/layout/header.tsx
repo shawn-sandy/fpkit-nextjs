@@ -6,6 +6,7 @@ export interface HeaderProps {
   title?: React.ReactNode;
   link?: string;
   linkLabel?: React.ReactNode;
+  description?: React.ReactNode;
   children?: React.ReactNode;
 }
 
@@ -14,7 +15,7 @@ export const HeaderBase = ({ children }: BaseProps) => {
   return <Header>{children}</Header>;
 };
 
-function DefaultHeader({ title, link, linkLabel }: HeaderProps) {
+function DefaultHeader({ title, link, linkLabel, description }: HeaderProps) {
   return (
     <Section>
       <Title
@@ -25,6 +26,7 @@ function DefaultHeader({ title, link, linkLabel }: HeaderProps) {
       >
         {title}
       </Title>
+      {description && <Text elm="p">{description}</Text>}
       <Text elm="p">
         <Tag
           as="a"
@@ -44,6 +46,7 @@ export const ThemeHeader = ({
   title,
   link,
   linkLabel,
+  description,
   children,
 }: HeaderProps) => {
   if (!title) {
@@ -54,7 +57,12 @@ export const ThemeHeader = ({
       {children ? (
         children
       ) : (
-        <DefaultHeader title={title} link={link} linkLabel={linkLabel} />
+        <DefaultHeader
+          title={title}
+          link={link}
+          linkLabel={linkLabel}
+          description={description}
+        />
       )}
     </HeaderBase>
   );

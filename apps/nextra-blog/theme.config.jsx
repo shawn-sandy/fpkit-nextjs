@@ -11,7 +11,7 @@ export default {
   },
   banner: {
     title: "FPKIT NEXTRA",
-    description: "Cover description",
+    description: "A simple easy to use nextra theme",
     link: "/",
     linkLabel: "Get Started",
   },
@@ -26,4 +26,3 @@ export default {
     text: "Nextra Docs Template",
   },
 };
-3;

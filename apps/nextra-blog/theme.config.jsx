@@ -9,6 +9,12 @@ export default {
     logo: <span>FPKIT NEXTRA</span>,
     url: "/",
   },
+  banner: {
+    title: "FPKIT NEXTRA",
+    description: "Cover description",
+    link: "/",
+    linkLabel: "Get Started",
+  },
   project: {
     link: "https://github.com/shuding/nextra-docs-template",
   },
@@ -20,3 +26,4 @@ export default {
     text: "Nextra Docs Template",
   },
 };
+3;

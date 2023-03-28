@@ -4,8 +4,8 @@ import { Header, Section } from "./landmarks";
 /** set types  */
 export interface HeaderProps {
   title?: React.ReactNode;
-  ctaLink?: string;
-  ctaLabel?: React.ReactNode;
+  link?: string;
+  linkLabel?: React.ReactNode;
   children?: React.ReactNode;
 }
 
@@ -14,31 +14,7 @@ export const HeaderBase = ({ children }: BaseProps) => {
   return <Header>{children}</Header>;
 };
 
-export const ThemeHeader = ({
-  title,
-  ctaLink,
-  ctaLabel,
-  children,
-}: HeaderProps) => {
-  if (!title) {
-    throw new Error("ThemeHeader requires a title prop");
-  }
-  return (
-    <HeaderBase>
-      {/* display the children if undefined else display the default header */}
-      {children ? (
-        children
-      ) : (
-        <DefaultHeader title={title} ctaLink={ctaLink} ctaLabel={ctaLabel} />
-      )}
-    </HeaderBase>
-  );
-};
-
-ThemeHeader.displayName = "Header";
-export default ThemeHeader;
-
-function DefaultHeader({ title, ctaLink, ctaLabel }: HeaderProps) {
+function DefaultHeader({ title, link, linkLabel }: HeaderProps) {
   return (
     <Section>
       <Title
@@ -52,14 +28,36 @@ function DefaultHeader({ title, ctaLink, ctaLabel }: HeaderProps) {
       <Text elm="p">
         <Tag
           as="a"
-          href={ctaLink}
+          href={link}
           data-btn
           data-variant="primary"
           data-style="pill"
         >
-          {ctaLabel || "Get Started"}
+          {linkLabel || "Get Started"}
         </Tag>
       </Text>
     </Section>
   );
 }
+
+export const ThemeHeader = ({
+  title,
+  link,
+  linkLabel,
+  children,
+}: HeaderProps) => {
+  if (!title) {
+    throw new Error("ThemeHeader requires a title prop");
+  }
+  return (
+    <HeaderBase>
+      {children ? (
+        children
+      ) : (
+        <DefaultHeader title={title} link={link} linkLabel={linkLabel} />
+      )}
+    </HeaderBase>
+  );
+};
+ThemeHeader.displayName = "Header";
+export default ThemeHeader;

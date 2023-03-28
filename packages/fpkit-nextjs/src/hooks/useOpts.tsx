@@ -20,8 +20,6 @@ export const usePageOpts = ({ options }: optsTypes) => {
       item.frontMatter !== undefined
   );
 
-  // const posts = postList.filter((item) => item?.frontMatter === true);
-
   const dirList = pageMap.filter(
     (item: { kind: string }) => item.kind === "Folder"
   );

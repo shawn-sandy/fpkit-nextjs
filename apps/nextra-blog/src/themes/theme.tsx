@@ -11,13 +11,19 @@ export default function Layout({
   pageOpts,
   themeConfig,
 }: NextraThemeLayoutProps) {
+  // @ts-ignore
   const { dirList, postList } = usePageOpts({ options: { pageOpts } });
   const posts = postList.map((item) => item?.frontMatter);
+  const cover = themeConfig.banner;
 
   return (
     <>
       <Nav brand={themeConfig.brand} navList={dirList} />
-      <ThemeHeader title="FPKit Next" ctaLink="/" ctaLabel="" />
+      <ThemeHeader
+        title={cover.title}
+        link={cover.link}
+        linkLabel={cover.linkLabel}
+      />
       <ThemeMain>{children}</ThemeMain>
       <ThemeFooter />
     </>

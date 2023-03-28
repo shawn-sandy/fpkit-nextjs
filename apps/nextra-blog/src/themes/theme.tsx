@@ -16,7 +16,6 @@ export default function Layout({
   const { dirList, postList } = usePageOpts({ options: { pageOpts } });
   const posts = postList.map((item) => item?.frontMatter);
   const banner = themeConfig.banner;
-  console.log(themeConfig.components);
 
   return (
     <>

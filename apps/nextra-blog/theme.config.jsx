@@ -1,7 +1,15 @@
 import { MDXComponents } from "@fpkit/nextjs/libs/libs";
+import { useConfig } from "nextra-theme-blog";
 
 export default {
   // const { frontMatter } = useConfig();
+  head: (
+    <>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta property="og:title" content="FPKIT Nextra" />
+      <meta property="og:description" content="The next site builder" />
+    </>
+  ),
   logo: (
     <h1>
       <span>Nextra Base</span>
@@ -28,18 +36,7 @@ export default {
     text: "Nextra Docs Template",
   },
   components: {
-    h2: ({ children }) => (
-      <h1
-        style={{
-          WebkitBackgroundClip: "text",
-          WebkitTextFillColor: "transparent",
-          backgroundClip: "text",
-          backgroundImage: "linear-gradient(90deg,#7928CA,#FF0080)",
-        }}
-      >
-        {children}
-      </h1>
-    ),
+    h2: ({ children }) => <h2>{children}</h2>,
     ...MDXComponents,
   },
   darkMode: true,

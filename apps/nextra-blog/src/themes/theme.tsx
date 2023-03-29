@@ -3,7 +3,7 @@ import useBlogContext from "nextra-theme-blog";
 import React from "react";
 
 import Nav from "../components/nav";
-import { ThemeMain, ThemeHeader, ThemeFooter } from "@fpkit/nextjs";
+import { ThemeMain, ThemeHeader, ThemeFooter, PostsList } from "@fpkit/nextjs";
 import { usePageOpts, useConfig } from "@fpkit/nextjs/libs/hooks";
 import "@shawnsandy/first-paint/dist/css/libs/all.min.css";
 import { MDXProvider } from "nextra/mdx";
@@ -16,6 +16,7 @@ export default function Layout({
   const { dirList, postList } = usePageOpts({ options: { pageOpts } });
   const posts = postList.map((item) => item?.frontMatter);
   const banner = themeConfig.banner;
+  console.log({ postList });
 
   return (
     <>
@@ -27,9 +28,13 @@ export default function Layout({
         description={banner.description}
       />
       <ThemeMain>
-        <MDXProvider components={themeConfig.components}>
-          {children}
-        </MDXProvider>
+        {pageOpts.route === "/" && postList.length > 0 ? (
+          <PostsList postList={postList} showDescription />
+        ) : (
+          <MDXProvider components={themeConfig.components}>
+            {children}
+          </MDXProvider>
+        )}
       </ThemeMain>
       <ThemeFooter />
     </>

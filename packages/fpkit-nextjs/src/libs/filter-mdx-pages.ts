@@ -1,13 +1,15 @@
 // import { MdxPage } from './filter-mdx-pages';
 import { PageMapItem, MdxFile } from "nextra";
 
-type SortBy = "date" | "name";
+export type SortBy = "date" | "name";
 
-type SortOrder = "ascending" | "descending";
+export type SortOrder = "ascending" | "descending";
 
 /**
  * Filters an array of pages and returns only the MDX pages.
  * @param pages An array of pages.
+ * @param sortBy The field to sort by.
+ * @param sortOrder The sort order.
  * @returns An array of MDX pages.
  */
 export function FilterMdxPages(pages: PageMapItem[], sortBy: SortBy = 'date', sortOrder: SortOrder = "descending"): MdxFile[] {

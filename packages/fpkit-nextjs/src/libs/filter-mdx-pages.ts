@@ -1,55 +1,17 @@
-/**
- * Represents the front matter of an MDX page.
- */
-export interface FrontMatter {
-    type?: string;
-    title: string;
-    date: string;
-    description?: string;
-    tag?: string;
-    author?: string;
-}
+// import { MdxPage } from './filter-mdx-pages';
+import { PageMapItem, MdxFile } from "nextra";
 
-/**
- * Represents an MDX page.
- */
-export interface MdxPage {
-    kind: "MdxPage";
-    name: string;
-    route: string;
-    frontMatter: FrontMatter;
-}
+type SortBy = "date" | "name";
 
-/**
- * Represents a folder that contains MDX pages or other folders.
- */
-export interface Folder {
-    kind: "Folder";
-    name: string;
-    route: string;
-    children: Array<MdxPage | Folder>;
-}
-
-/**
- * Represents a meta object that maps page names to their titles.
- */
-export interface Meta {
-    kind: "Meta";
-    data: { [key: string]: string };
-}
-
-/**
- * Represents any type of page.
- */
-export type Page = MdxPage | Folder | Meta;
+type SortOrder = "ascending" | "descending";
 
 /**
  * Filters an array of pages and returns only the MDX pages.
  * @param pages An array of pages.
  * @returns An array of MDX pages.
  */
-export function FilterMdxPages(pages: Page[]): MdxPage[] {
-    const mdxPages: MdxPage[] = [];
+export function FilterMdxPages(pages: PageMapItem[], sortBy: SortBy = 'date', sortOrder: SortOrder = "descending"): MdxFile[] {
+    const mdxPages: MdxFile[] = [];
 
     pages.forEach((item) => {
         if (item.kind === "MdxPage") {
@@ -63,15 +25,38 @@ export function FilterMdxPages(pages: Page[]): MdxPage[] {
         }
     });
 
+    if (sortBy) {
+        sortMdxPages(mdxPages, sortBy, sortOrder);
+    }
+
     return mdxPages;
 }
 
-export function paginateMdxPages(mdxPages: MdxPage[], limit: number, currentPage: number): {
+export function sortMdxPages(mdxPages: MdxFile[], sortBy: SortBy, sortOrder: SortOrder): void {
+    mdxPages.sort((a, b) => {
+        switch (sortBy) {
+            case "date":
+                const dateA = new Date(a.frontMatter?.date);
+                const dateB = new Date(b.frontMatter?.date);
+                return sortOrder === "ascending" ? dateA.getTime() - dateB.getTime() : dateB.getTime() - dateA.getTime();
+            case "name":
+                const nameA = a.name.toLowerCase();
+                const nameB = b.name.toLowerCase();
+                return sortOrder === "ascending" ? nameA.localeCompare(nameB) : nameB.localeCompare(nameA);
+            default:
+                return 0;
+        }
+    });
+}
+
+
+
+export function paginateMdxPages(mdxPages: MdxFile[], limit: number, currentPage: number): {
     totalPages: number,
     currentPage: number,
     hasNextPage: boolean,
     hasPrevPage: boolean,
-    pages: MdxPage[]
+    pages: MdxFile[]
 } {
     const totalPages = Math.ceil(mdxPages.length / limit);
     const offset = (currentPage - 1) * limit;
@@ -85,8 +70,6 @@ export function paginateMdxPages(mdxPages: MdxPage[], limit: number, currentPage
         pages,
     };
 }
-
-
 
 export default FilterMdxPages;
 // const mdxPages = filterMdxPages(pages);

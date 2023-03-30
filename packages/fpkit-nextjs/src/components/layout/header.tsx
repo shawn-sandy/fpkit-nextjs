@@ -15,7 +15,12 @@ export const HeaderBase = ({ children }: BaseProps) => {
   return <Header>{children}</Header>;
 };
 
-function DefaultHeader({ title, link, linkLabel, description }: HeaderProps) {
+export function DefaultHeader({
+  title,
+  link,
+  linkLabel,
+  description,
+}: HeaderProps) {
   return (
     <Section>
       <Title

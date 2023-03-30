@@ -1,10 +1,10 @@
 import React from "react";
 
-type themeConfig = {
+export type themeConfig = {
   [key: string]: any;
 };
 
-type ThemeOptions = {
+export type ThemeOptions = {
   config: themeConfig | {};
   children: React.ReactNode;
 };

@@ -69,5 +69,11 @@
     "vitest": "^0.15.2",
     "vitest-axe": "^0.1.0"
   },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "next": "^13.2.4",
+    "nextra": "^2.2.20"
+  },
   "gitHead": "1d70ce0769418bca1e398804a6ee975510e49097"
 }

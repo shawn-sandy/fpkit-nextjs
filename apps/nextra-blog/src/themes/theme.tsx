@@ -3,7 +3,13 @@ import useBlogContext from "nextra-theme-blog";
 import React from "react";
 
 import Nav from "../components/nav";
-import { ThemeMain, ThemeHeader, ThemeFooter, PostsList } from "@fpkit/nextjs";
+import {
+  ThemeMain,
+  ThemeHeader,
+  ThemeFooter,
+  PostsList,
+  Navigation,
+} from "@fpkit/nextjs";
 import { usePageOpts, useConfig } from "@fpkit/nextjs/libs/hooks";
 import { FilterMdxPages } from "@fpkit/nextjs/libs/libs";
 import "@shawnsandy/first-paint/dist/css/libs/all.min.css";
@@ -24,7 +30,8 @@ export default function Layout({
 
   return (
     <>
-      <Nav brand={themeConfig.brand} navList={dirList} />
+      {/* <Nav brand={themeConfig.brand} navList={dirList} /> */}
+      <Navigation brand={themeConfig.brand} data={pageMap} />
       <ThemeHeader
         title={banner.title}
         link={banner.link}

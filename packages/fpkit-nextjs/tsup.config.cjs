@@ -5,6 +5,7 @@ export default defineConfig({
   outDir: "libs",
   splitting: true,
   sourcemap: true,
+  treeshake: true,
   external: ["react", "react-dom", "next", "nextra"],
   clean: true,
   format: ["esm", "cjs"],

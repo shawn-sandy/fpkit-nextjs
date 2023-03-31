@@ -16,6 +16,7 @@ export default function Layout({
 }: NextraThemeLayoutProps) {
   const { pageMap } = pageOpts;
   const { dirList, postList } = usePageOpts({ options: { pageOpts } });
+  // @ts-ignore
   const posts = postList.map((item) => item?.frontMatter);
   const banner = themeConfig.banner;
 

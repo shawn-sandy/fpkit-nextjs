@@ -1,4 +1,4 @@
-import { NextraThemeLayoutProps } from "nextra";
+import { NextraThemeLayoutProps, PageMapItem } from "nextra";
 
 export type optsTypes = {
   options: Pick<NextraThemeLayoutProps, "pageOpts">;
@@ -14,7 +14,7 @@ export const usePageOpts = ({ options }: optsTypes) => {
   }
 
   const postList = pageMap.filter(
-    (item) =>
+    (item: PageMapItem) =>
       item.kind === "MdxPage" &&
       item.route !== "/" &&
       item.frontMatter !== undefined

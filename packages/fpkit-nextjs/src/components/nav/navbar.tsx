@@ -1,7 +1,7 @@
 import React from "react";
 import { Tag, Text, Title } from "@fpkit/react";
 import Nav, { NavItem } from "./nav";
-import { PageMapItem, MdxFile } from "nextra";
+import { PageMapItem } from "nextra";
 
 export type NavbarProps = {
   route: string;
@@ -9,7 +9,7 @@ export type NavbarProps = {
 };
 
 export type NavListTypes = {
-  navList: MdxFile[];
+  navList: NavbarProps[];
   brand?: {
     url?: string;
     logo?: React.ReactNode;

@@ -121,6 +121,7 @@ export const BrandedNavigationBar: Story = {
     const nav = canvas.getByRole("navigation");
     const brand = canvas.getByRole("heading");
     const links = canvas.getByText(branding.logo);
+
     expect(nav).toBeDefined();
     expect(brand).toBeDefined();
     expect(brand.getElementsByTagName("a")).toBeDefined();

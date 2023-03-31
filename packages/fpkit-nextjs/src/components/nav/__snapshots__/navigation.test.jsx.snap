@@ -1,0 +1,29 @@
+// Vitest Snapshot v1
+
+exports[`Navigation > renders the branding 1`] = `
+<h1
+  style="--fs: 1.2rem;"
+>
+  <a
+    href="/"
+    style="text-transform: capitalize;"
+  >
+    Branding Logo
+  </a>
+</h1>
+`;
+
+exports[`Navigation > renders the navigation 1`] = `
+<nav>
+  <ul>
+    <li>
+      <a
+        href="/advanced"
+        style="text-transform: capitalize;"
+      >
+        advanced
+      </a>
+    </li>
+  </ul>
+</nav>
+`;

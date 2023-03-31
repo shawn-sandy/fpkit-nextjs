@@ -6,7 +6,7 @@ export default defineConfig({
   splitting: true,
   sourcemap: true,
   treeshake: true,
-  external: ["react", "react-dom", "next", "nextra"],
+  external: ["react", "react-dom", "next", "nextra", "@fpkit/react"],
   clean: true,
   format: ["esm", "cjs"],
   minify: true,

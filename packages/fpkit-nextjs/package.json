@@ -73,7 +73,8 @@
     "next": "^13.2.4",
     "nextra": "^2.2.20",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "@fpkit/react": "^0.2.63"
   },
   "gitHead": "1d70ce0769418bca1e398804a6ee975510e49097"
 }

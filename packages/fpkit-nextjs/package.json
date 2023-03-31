@@ -1,7 +1,7 @@
 {
   "name": "@fpkit/nextjs",
   "private": false,
-  "version": "0.0.11",
+  "version": "0.0.12",
   "type": "module",
   "source": "src/index.ts",
   "main": "./libs/index.cjs",
@@ -70,10 +70,10 @@
     "vitest-axe": "^0.1.0"
   },
   "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "next": "^13.2.4",
-    "nextra": "^2.2.20"
+    "nextra": "^2.2.20",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "gitHead": "1d70ce0769418bca1e398804a6ee975510e49097"
 }

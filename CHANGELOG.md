@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.12](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.0.11...v0.0.12) (2023-03-31)
+
+**Note:** Version bump only for package fpkit-vite
+
 ## [0.0.11](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.0.10...v0.0.11) (2023-03-31)
 
 ### Features

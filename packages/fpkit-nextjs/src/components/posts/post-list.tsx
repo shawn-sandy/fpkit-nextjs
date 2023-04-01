@@ -41,6 +41,7 @@ export const PostsList = ({
                     Continue Reading
                   </Link>
                 </p>
+                <hr />
               </Article>
             ) : (
               <Link href={route}>{item.frontMatter?.title}</Link>

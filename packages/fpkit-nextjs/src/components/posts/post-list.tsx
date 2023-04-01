@@ -1,5 +1,5 @@
 import { PageOpts, MdxFile } from "nextra";
-import { Tag, Title } from "@fpkit/react";
+import { Article, Tag, Title } from "@fpkit/react";
 import Link from "next/link";
 import React from "react";
 
@@ -26,13 +26,22 @@ export const PostsList = ({
         return (
           <Tag as={as} key={React.useId()} {...props}>
             {!!showDescription ? (
-              <>
+              <Article styles={{ paddingBlock: "1rem" }}>
                 <Title elm={elm}>
                   <Link href={route}>{item.frontMatter?.title}</Link>
                 </Title>
                 <p>{item.frontMatter?.description}</p>
-                <hr />
-              </>
+                <p>
+                  <Link
+                    href={route}
+                    data-btn
+                    data-variant="primary"
+                    data-style="pill"
+                  >
+                    Continue Reading
+                  </Link>
+                </p>
+              </Article>
             ) : (
               <Link href={route}>{item.frontMatter?.title}</Link>
             )}

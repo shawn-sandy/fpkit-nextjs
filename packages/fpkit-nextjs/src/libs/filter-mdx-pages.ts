@@ -16,11 +16,12 @@ export function FilterMdxPages(pages: PageMapItem[], sortBy: SortBy = 'date', so
     const mdxPages: MdxFile[] = [];
 
     pages.forEach((item) => {
-        if (item.kind === "MdxPage") {
+
+        if (item.kind === "MdxPage" && item.frontMatter?.type !== 'page') {
             mdxPages.push(item);
         } else if (item.kind === "Folder" && item.children) {
             item.children.forEach((child) => {
-                if (child.kind === "MdxPage") {
+                if (child.kind === "MdxPage" && child.frontMatter?.type !== 'page') {
                     mdxPages.push(child);
                 }
             });

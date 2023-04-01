@@ -76,5 +76,20 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
-  "gitHead": "1d70ce0769418bca1e398804a6ee975510e49097"
+  "description": "Test setup",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shawn-sandy/fpkit-nextjs.git#main"
+  },
+  "keywords": [
+    "components",
+    "nextjs",
+    "react"
+  ],
+  "author": "shawnsandy <shawnsandy04@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shawn-sandy/fpkit-nextjs/issues"
+  },
+  "homepage": "https://github.com/shawn-sandy/fpkit-nextjs/"
 }

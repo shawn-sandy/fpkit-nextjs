@@ -2,6 +2,7 @@
 export * from './components/nav/nav';
 export * from './components/nav/navigation';
 export * from './components/nav/nav-list';
+export * from './components/nav/nav-brand';
 export * from './components/layout/main';
 export * from './components/layout/header';
 export * from './components/layout/footer';

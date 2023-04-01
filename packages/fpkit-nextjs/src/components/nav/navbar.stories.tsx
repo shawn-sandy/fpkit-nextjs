@@ -15,15 +15,15 @@ type Story = StoryObj<typeof Navbar>;
 
 const navList = [
   {
-    url: "/home",
+    route: "/home",
     name: "Home",
   },
   {
-    url: "/about",
+    route: "/about",
     name: "About",
   },
   {
-    url: "/contact",
+    route: "/contact",
     name: "Contact",
   },
 ];

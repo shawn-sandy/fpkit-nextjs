@@ -1,12 +1,12 @@
 {
   "name": "@fpkit/nextjs",
   "private": false,
-  "version": "0.0.4",
+  "version": "0.0.13",
   "type": "module",
   "source": "src/index.ts",
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./libs/index.cjs",
+  "module": "./libs/index.js",
+  "types": "./libs/index.d.ts",
   "files": [
     "lib",
     "src",
@@ -17,7 +17,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && tsup --dts",
     "preview": "vite preview",
     "package": "tsc && tsup --dts",
     "package:watch": "tsup --watch --dts",
@@ -25,10 +25,11 @@
     "test:watch": "vitest",
     "test:ui": "vitest --ui",
     "test:ci": "c8 vitest --ci --coverage",
-    "test:update": "vitest -u"
+    "test:update": "vitest -u",
+    "trash": "trash 'libs'"
   },
   "dependencies": {
-    "@fpkit/react": "^0.2.62",
+    "@fpkit/react": "^0.2.63",
     "@shawnsandy/first-paint": "^2.17.45",
     "next": "^13.2.4",
     "nextra": "^2.2.20",
@@ -44,7 +45,7 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
-    "@types/react": "^18.0.28",
+    "@types/react": "^18.0.29",
     "@types/react-dom": "^18.0.11",
     "@types/react-test-renderer": "^18.0.0",
     "@vitejs/plugin-react": "^3.1.0",
@@ -59,6 +60,7 @@
     "npm-run-all": "^4.1.5",
     "react-test-renderer": "^18.2.0",
     "sass": "^1.60.0",
+    "trash-cli": "^5.0.0",
     "ts-node": "^10.9.1",
     "tsup": "^6.7.0",
     "typescript": "^4.9.5",
@@ -66,6 +68,13 @@
     "vite-plugin-dts": "^1.7.3",
     "vitest": "^0.15.2",
     "vitest-axe": "^0.1.0"
+  },
+  "peerDependencies": {
+    "@fpkit/react": "^0.2.63",
+    "next": "^13.2.4",
+    "nextra": "^2.2.20",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "gitHead": "1d70ce0769418bca1e398804a6ee975510e49097"
 }

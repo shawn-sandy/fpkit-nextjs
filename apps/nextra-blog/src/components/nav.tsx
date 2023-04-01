@@ -1,20 +1,15 @@
-import { Navbar } from'@fpkit/nextjs';
-import React from 'react';
+import { Navbar } from "@fpkit/nextjs";
+import type { MdxFile } from "nextra";
+import React from "react";
 
-export default function Nav() {
-  const navList = [
-    {
-      url: '/home',
-      name: 'Home',
-    },
-    {
-      url: '/about',
-      name: 'About',
-    },
-    {
-      url: '/contact',
-      name: 'Contact',
-    },
-  ];
-  return <Navbar navList={navList} />;
+type NavProps = {
+  brand: {
+    url?: string;
+    logo?: React.ReactNode;
+  };
+  navList: MdxFile[];
+};
+
+export default function Nav({ brand, navList }: NavProps): JSX.Element {
+  return <Navbar brand={brand} navList={navList} />;
 }

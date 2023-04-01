@@ -22,7 +22,9 @@ export const NavItem = ({
   return (
     <>
       <Tag as="li" {...props}>
-        <a href={route}>{children}</a>
+        <Tag as="a" href={route} styles={{ textTransform: "capitalize" }}>
+          {children}
+        </Tag>
       </Tag>
     </>
   );

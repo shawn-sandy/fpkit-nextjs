@@ -10,7 +10,7 @@ export const usePageOpts = ({ options }: optsTypes) => {
   const { pageMap } = pageOpts;
 
   if (!pageMap) {
-    return { contentDirs: [], postList: [], posts: [] };
+    return { contentDirs: [], postList: [], posts: [], pageList: [] };
   }
 
   const postList = pageMap.filter(
@@ -20,9 +20,14 @@ export const usePageOpts = ({ options }: optsTypes) => {
       item.frontMatter !== undefined
   );
 
-  const dirList = pageMap.filter(
-    (item: { kind: string }) => item.kind === "Folder"
+  const pageList: PageMapItem[] = pageMap.filter(
+    (item: PageMapItem) =>
+      item.kind === "MdxPage" && item.frontMatter?.type === "page"
   );
 
-  return { dirList, postList };
+  const dirList: PageMapItem[] = pageMap.filter(
+    (item: PageMapItem) => item.kind === "Folder"
+  );
+
+  return { dirList, postList, pageList };
 };

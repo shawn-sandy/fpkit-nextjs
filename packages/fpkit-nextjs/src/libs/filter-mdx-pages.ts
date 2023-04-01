@@ -17,11 +17,11 @@ export function FilterMdxPages(pages: PageMapItem[], sortBy: SortBy = 'date', so
 
     pages.forEach((item) => {
 
-        if (item.kind === "MdxPage" && item.frontMatter?.type !== 'page') {
+        if (item.kind === "MdxPage" && item.frontMatter?.type !== 'page' && !!item.frontMatter?.description) {
             mdxPages.push(item);
         } else if (item.kind === "Folder" && item.children) {
             item.children.forEach((child) => {
-                if (child.kind === "MdxPage" && child.frontMatter?.type !== 'page') {
+                if (child.kind === "MdxPage" && child.frontMatter?.type !== 'page' && !!child.frontMatter?.description) {
                     mdxPages.push(child);
                 }
             });

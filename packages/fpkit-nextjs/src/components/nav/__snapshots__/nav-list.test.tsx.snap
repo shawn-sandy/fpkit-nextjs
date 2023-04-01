@@ -1,0 +1,32 @@
+// Vitest Snapshot v1
+
+exports[`Nav renders correctly > renders without crashing 1`] = `
+<nav>
+  <ul>
+    <li>
+      <a
+        href="/articles"
+        style="text-transform: capitalize;"
+      >
+        Articles
+      </a>
+    </li>
+    <li>
+      <a
+        href="/"
+        style="text-transform: capitalize;"
+      >
+        About
+      </a>
+    </li>
+    <li>
+      <a
+        href="/posts"
+        style="text-transform: capitalize;"
+      >
+        Posts
+      </a>
+    </li>
+  </ul>
+</nav>
+`;

@@ -11,11 +11,11 @@ export interface Page {
   frontMatter: FrontMatter;
 }
 
-export interface NavProps {
+export interface NavListProps {
   pageList: Page[];
 }
 
-export const NavList = ({ pageList }: NavProps) => {
+export const NavList = ({ pageList }: NavListProps) => {
   return (
     <Tag as="ul">
       {pageList.map((page, index) => (

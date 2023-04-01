@@ -34,6 +34,7 @@ export default function Layout({
     <>
       {/* <Nav brand={themeConfig.brand} navList={dirList} /> */}
       <Navigation brand={themeConfig.brand} data={pageMap} />
+
       <ThemeHeader
         title={banner.title}
         link={banner.link}

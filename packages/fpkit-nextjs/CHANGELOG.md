@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.14](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.0.13...v0.0.14) (2023-04-01)
+
+### Features
+
+- 🌟 add conditional rendering for post list ([ebb6388](https://github.com/shawn-sandy/fpkit-nextjs/commit/ebb638867937d59e9c0ea96480ae7fd83b5fa25e))
+- 🏗️ set article padding to 1rem ([896688a](https://github.com/shawn-sandy/fpkit-nextjs/commit/896688a2d3e426adc35e8b67476faf814c0b75af))
+- 🔥 remove the navbar component ([628bb2f](https://github.com/shawn-sandy/fpkit-nextjs/commit/628bb2f1cdfd88ee923a6ce9e5eb425e84217e68))
+
 ## [0.0.13](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.0.12...v0.0.13) (2023-03-31)
 
 **Note:** Version bump only for package @fpkit/nextjs

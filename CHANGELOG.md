@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.2](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.1.1...v0.1.2) (2023-04-01)
+
+### Features
+
+- 🚗 add nav list to index.ts exports ([a7a271e](https://github.com/shawn-sandy/fpkit-nextjs/commit/a7a271e0373ea87e874f05d2c211c63b9dfd845a))
+- add nav-brand story/unit test ([5d24982](https://github.com/shawn-sandy/fpkit-nextjs/commit/5d24982e72634edfbb4b9e06c3e87c8b240c284f))
+- add nav-list component ([98ae3ad](https://github.com/shawn-sandy/fpkit-nextjs/commit/98ae3ad13e669f7e6b73c01f8714369eae16295a))
+
 ## [0.1.1](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.1.0...v0.1.1) (2023-04-01)
 
 **Note:** Version bump only for package fpkit-vite

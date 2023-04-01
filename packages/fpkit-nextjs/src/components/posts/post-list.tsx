@@ -26,7 +26,7 @@ export const PostsList = ({
         return (
           <Tag as={as} key={React.useId()} {...props}>
             {!!showDescription ? (
-              <Article styles={{ paddingBlock: "2rem" }}>
+              <Article styles={{ paddingBlock: "1rem" }}>
                 <Title elm={elm}>
                   <Link href={route}>{item.frontMatter?.title}</Link>
                 </Title>

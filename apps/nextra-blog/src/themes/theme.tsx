@@ -2,18 +2,21 @@ import type { NextraThemeLayoutProps } from "nextra";
 import useBlogContext from "nextra-theme-blog";
 import React from "react";
 
-import Nav from "../components/nav";
 import {
   ThemeMain,
   ThemeHeader,
   ThemeFooter,
   PostsList,
   Navigation,
+  NavList,
+  Nav,
+  NavBrand,
 } from "@fpkit/nextjs";
+
 import { usePageOpts, useConfig } from "@fpkit/nextjs/libs/hooks";
 import { FilterMdxPages } from "@fpkit/nextjs/libs/libs";
-import "@shawnsandy/first-paint/dist/css/libs/all.min.css";
 import { MDXProvider } from "nextra/mdx";
+import "@shawnsandy/first-paint/dist/css/libs/all.min.css";
 
 export default function Layout({
   children,
@@ -32,8 +35,10 @@ export default function Layout({
 
   return (
     <>
-      {/* <Nav brand={themeConfig.brand} navList={dirList} /> */}
-      <Navigation brand={themeConfig.brand} data={pageMap} />
+      <Nav>
+        <NavBrand logo={themeConfig.brand.logo} url={themeConfig.brand.logo} />
+        <NavList pageList={pageList} />
+      </Nav>
 
       <ThemeHeader
         title={banner.title}

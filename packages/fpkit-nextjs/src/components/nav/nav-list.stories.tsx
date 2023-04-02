@@ -45,9 +45,11 @@ export const RenderNavbar: Story = {
   ),
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
+    // @ts-ignore
     await Default.play({ canvasElement });
 
     const nav = canvas.getByRole("navigation");
+    // @ts-ignore
     expect(nav).toBeInTheDocument();
   },
 };

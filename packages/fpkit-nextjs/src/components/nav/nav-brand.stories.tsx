@@ -35,6 +35,7 @@ export const TextBrand: Story = {
 
     // @ts-ignore
     expect(link).toBeInTheDocument();
+    // @ts-ignore
     expect(logo).toBeInTheDocument();
   },
 };

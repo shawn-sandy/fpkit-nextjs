@@ -36,7 +36,7 @@ export default function Layout({
   return (
     <>
       <Nav>
-        <NavBrand logo={themeConfig.brand.logo} url={themeConfig.brand.logo} />
+        <NavBrand logo={themeConfig.brand.logo} url={themeConfig.brand.url} />
         <NavList pageList={pageList} />
       </Nav>
 

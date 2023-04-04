@@ -19,7 +19,7 @@ const meta: Meta<typeof NavList> = {
 export default meta;
 type Story = StoryObj<typeof NavList>;
 
-export const Default: Story = {
+export const List: Story = {
   args: {
     pageList: navListItems,
   },
@@ -36,7 +36,7 @@ export const Default: Story = {
 
 export const RenderNavbar: Story = {
   args: {
-    ...Default.args,
+    ...List.args,
   },
   render: ({ ...args }) => (
     <Nav>

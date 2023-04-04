@@ -30,7 +30,7 @@
     "trash": "trash 'libs'"
   },
   "dependencies": {
-    "@fpkit/react": "^0.2.63",
+    "@fpkit/react": "^0.2.67",
     "@shawnsandy/first-paint": "^2.17.46",
     "next": "^13.2.4",
     "nextra": "^2.2.20",

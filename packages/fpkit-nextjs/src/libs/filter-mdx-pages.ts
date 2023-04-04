@@ -35,6 +35,27 @@ export function FilterMdxPages(pages: PageMapItem[], sortBy: SortBy = 'date', so
     return mdxPages;
 }
 
+
+export function FilterPageType(pages: PageMapItem[], type: string = 'page'): MdxFile[] {
+    const results: MdxFile[] = [];
+
+    pages.forEach((item) => {
+        if (item.kind === "MdxPage" && item.frontMatter?.type === type && !!item.frontMatter?.description) {
+            results.push(item);
+        } else if (item.kind === 'Folder' && item.children) {
+            item.children.forEach((child) => {
+                if (child.kind === "MdxPage" && child.frontMatter?.type === 'page' && !!child.frontMatter?.description) {
+                    results.push(child);
+                }
+            });
+        }
+
+    });
+
+    return results;
+
+}
+
 export function sortMdxPages(mdxPages: MdxFile[], sortBy: SortBy, sortOrder: SortOrder): void {
     mdxPages.sort((a, b) => {
         switch (sortBy) {

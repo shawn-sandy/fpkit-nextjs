@@ -40,7 +40,7 @@ export function FilterPageType(pages: PageMapItem[], type: string = 'page'): Mdx
     const results: MdxFile[] = [];
 
     pages.forEach((item) => {
-        if (item.kind === "MdxPage" && item.frontMatter?.type === type && !!item.frontMatter?.description) {
+        if (item.kind === "MdxPage" && item.frontMatter?.type === type) {
             results.push(item);
         } else if (item.kind === 'Folder' && item.children) {
             item.children.forEach((child) => {

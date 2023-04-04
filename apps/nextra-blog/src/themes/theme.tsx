@@ -13,7 +13,7 @@ import {
 } from "@fpkit/nextjs";
 
 import { usePageOpts, useConfig } from "@fpkit/nextjs/libs/hooks";
-import { FilterMdxPages } from "@fpkit/nextjs/libs/libs";
+import { FilterMdxPages, FilterPageType } from "@fpkit/nextjs/libs/libs";
 import { MDXProvider } from "nextra/mdx";
 import "@shawnsandy/first-paint/dist/css/libs/all.min.css";
 
@@ -27,10 +27,11 @@ export default function Layout({
     options: { pageOpts },
   });
 
-  
   const banner = themeConfig.banner;
 
   const latest = FilterMdxPages(pageMap);
+  const pages = FilterPageType(pageMap);
+  console.log({ pages });
 
   return (
     <>

@@ -25,9 +25,13 @@ export const NavList = ({ pageList }: NavListProps) => {
     );
   }
 
+  const sorted: MdxFile[] = [...pageList].sort((a, b) =>
+    a.frontMatter.navKey > b.frontMatter.navKey ? 1 : -1
+  );
+
   return (
     <Tag as="ul">
-      {pageList.map((page) => (
+      {sorted.map((page) => (
         <NavItem route={page.route} key={React.useId()}>
           {page.frontMatter.title}
         </NavItem>

@@ -13,7 +13,6 @@ import {
 } from "@fpkit/nextjs";
 
 import { usePageOpts, useConfig } from "@fpkit/nextjs/libs/hooks";
-import { FilterMdxPages, FilterPageType } from "@fpkit/nextjs/libs/libs";
 import { MDXProvider } from "nextra/mdx";
 import "@shawnsandy/first-paint/dist/css/libs/all.min.css";
 
@@ -23,7 +22,7 @@ export default function Layout({
   themeConfig,
 }: NextraThemeLayoutProps) {
   const { pageMap } = pageOpts;
-  const { dirList, postList, pageList, pages, latestPosts } = usePageOpts({
+  const { pages, latestPosts } = usePageOpts({
     options: { pageOpts },
   });
 

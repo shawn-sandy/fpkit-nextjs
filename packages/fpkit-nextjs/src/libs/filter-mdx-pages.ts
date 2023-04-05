@@ -17,7 +17,7 @@ export function FilterMdxPages(pages: PageMapItem[], sortBy: SortBy = 'date', so
 
     pages.forEach((item) => {
 
-        if (item.kind === "MdxPage" && item.frontMatter?.type !== 'page' && !!item.frontMatter?.description) {
+        if ((item.kind === "MdxPage" && !!item.frontMatter?.description) && item.frontMatter?.type !== 'page') {
             mdxPages.push(item);
         } else if (item.kind === "Folder" && item.children) {
             item.children.forEach((child) => {

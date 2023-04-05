@@ -1,4 +1,5 @@
 import { NextraThemeLayoutProps, PageMapItem } from "nextra";
+import FilterMdxPages, { FilterPageType } from "../libs/filter-mdx-pages";
 
 export type optsTypes = {
   options: Pick<NextraThemeLayoutProps, "pageOpts">;
@@ -10,7 +11,14 @@ export const usePageOpts = ({ options }: optsTypes) => {
   const { pageMap } = pageOpts;
 
   if (!pageMap) {
-    return { contentDirs: [], postList: [], posts: [], pageList: [] };
+    return {
+      contentDirs: [],
+      postList: [],
+      posts: [],
+      pageList: [],
+      latestPosts: [],
+      pages: [],
+    };
   }
 
   const postList = pageMap.filter(
@@ -29,5 +37,8 @@ export const usePageOpts = ({ options }: optsTypes) => {
     (item: PageMapItem) => item.kind === "Folder"
   );
 
-  return { dirList, postList, pageList };
+  const latestPosts = FilterMdxPages(pageMap);
+  const pages = FilterPageType(pageMap);
+
+  return { dirList, postList, pageList, latestPosts, pages };
 };

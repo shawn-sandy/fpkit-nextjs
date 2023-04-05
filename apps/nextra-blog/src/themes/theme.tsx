@@ -23,13 +23,13 @@ export default function Layout({
   themeConfig,
 }: NextraThemeLayoutProps) {
   const { pageMap } = pageOpts;
-  const { dirList, postList, pageList } = usePageOpts({
+  const { dirList, postList, pageList, pages, latestPosts } = usePageOpts({
     options: { pageOpts },
   });
 
   const banner = themeConfig.banner;
-  const latest = FilterMdxPages(pageMap);
-  const pages = FilterPageType(pageMap);
+  // const latest = FilterMdxPages(pageMap);
+  // const pages = FilterPageType(pageMap);
 
   return (
     <>
@@ -46,8 +46,8 @@ export default function Layout({
       />
 
       <ThemeMain>
-        {pageOpts.route === "/" && latest.length > 0 ? (
-          <PostsList postList={latest} showDescription />
+        {pageOpts.route === "/" && latestPosts.length > 0 ? (
+          <PostsList postList={latestPosts} showDescription />
         ) : (
           <MDXProvider components={themeConfig.components}>
             {children}

@@ -28,7 +28,6 @@ export default function Layout({
   });
 
   const banner = themeConfig.banner;
-
   const latest = FilterMdxPages(pageMap);
   const pages = FilterPageType(pageMap);
 

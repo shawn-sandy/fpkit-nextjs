@@ -33,7 +33,7 @@ export const NavList = ({ pageList }: NavListProps) => {
     <Tag as="ul">
       {sorted.map((page) => (
         <NavItem route={page.route} key={React.useId()}>
-          {page.frontMatter.title}
+          {page.frontMatter?.navTitle ?? page.frontMatter.title}
         </NavItem>
       ))}
     </Tag>

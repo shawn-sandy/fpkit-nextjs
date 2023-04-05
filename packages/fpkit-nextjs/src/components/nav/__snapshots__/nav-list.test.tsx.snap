@@ -5,10 +5,10 @@ exports[`Nav renders correctly > renders without crashing 1`] = `
   <ul>
     <li>
       <a
-        href="/articles"
+        href="/posts"
         style="text-transform: capitalize;"
       >
-        Articles
+        Posts
       </a>
     </li>
     <li>
@@ -21,10 +21,10 @@ exports[`Nav renders correctly > renders without crashing 1`] = `
     </li>
     <li>
       <a
-        href="/posts"
+        href="/articles"
         style="text-transform: capitalize;"
       >
-        Posts
+        Articles
       </a>
     </li>
   </ul>

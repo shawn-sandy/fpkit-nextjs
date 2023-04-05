@@ -36,4 +36,5 @@ export default {
     text: "Nextra Docs Template",
   },
   darkMode: true,
+  components: MDXComponents,
 };

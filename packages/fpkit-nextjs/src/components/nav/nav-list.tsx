@@ -1,7 +1,7 @@
 import React from "react";
 import { NavItem } from "./nav";
 
-import { FrontMatter } from "nextra";
+import { FrontMatter, PageMapItem, MdxFile } from "nextra";
 import { Tag } from "@fpkit/react";
 
 export interface Page {
@@ -12,15 +12,22 @@ export interface Page {
 }
 
 export interface NavListProps {
-  pageList: Page[];
+  pageList: MdxFile[];
 }
 
 export const NavList = ({ pageList }: NavListProps) => {
   // throw an error if the pageList is empty or undefined
+  if (!pageList || pageList.length === 0) {
+    return (
+      <Tag as="ul">
+        <li></li>
+      </Tag>
+    );
+  }
 
   return (
     <Tag as="ul">
-      {pageList.map((page, index) => (
+      {pageList.map((page) => (
         <NavItem route={page.route} key={React.useId()}>
           {page.frontMatter.title}
         </NavItem>

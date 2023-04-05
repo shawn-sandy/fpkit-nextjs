@@ -31,12 +31,12 @@ export default function Layout({
 
   const latest = FilterMdxPages(pageMap);
   const pages = FilterPageType(pageMap);
-  console.log({ pages });
 
   return (
     <>
       <Nav>
         <NavBrand logo={themeConfig.brand.logo} url={themeConfig.brand.url} />
+        <NavList pageList={pages} />
       </Nav>
 
       <ThemeHeader
@@ -45,6 +45,7 @@ export default function Layout({
         linkLabel={banner.linkLabel}
         description={banner.description}
       />
+
       <ThemeMain>
         {pageOpts.route === "/" && latest.length > 0 ? (
           <PostsList postList={latest} showDescription />
@@ -54,6 +55,7 @@ export default function Layout({
           </MDXProvider>
         )}
       </ThemeMain>
+
       <ThemeFooter />
     </>
   );

@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.3](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.1.2...v0.1.3) (2023-04-05)
+
+### Bug Fixes
+
+- 🚒 resolve issue with incorrect brand url ([#4](https://github.com/shawn-sandy/fpkit-nextjs/issues/4)) ([acf70bf](https://github.com/shawn-sandy/fpkit-nextjs/commit/acf70bf4c2bcf880c7edcadd8ea1a402687a714f))
+- 🚒 update and remove files/package to resolve build issues ([322db1d](https://github.com/shawn-sandy/fpkit-nextjs/commit/322db1dabdaeb93e35a8f835897b877766e12a60))
+
+### Features
+
+- 🌟 add navlist feature ([e630222](https://github.com/shawn-sandy/fpkit-nextjs/commit/e630222ee647ab14f360dbd29557a08181a3bfcf))
+- 🌟 feat page type filter ([4c1c138](https://github.com/shawn-sandy/fpkit-nextjs/commit/4c1c138da2ad8f06bb261bf28db081f55f84c58f))
+- 🤩 add sort method to page filter ([b42acae](https://github.com/shawn-sandy/fpkit-nextjs/commit/b42acae6250844f8b5c75c67da4ea910c956816d))
+
 ## [0.1.2](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.1.1...v0.1.2) (2023-04-01)
 
 ### Features

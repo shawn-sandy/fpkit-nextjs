@@ -10,6 +10,8 @@ import {
   NavList,
   Nav,
   NavBrand,
+  FilterMdxPages,
+  FilterPageType,
 } from "@fpkit/nextjs";
 
 import { usePageOpts, useConfig } from "@fpkit/nextjs/libs/hooks";
@@ -22,13 +24,10 @@ export default function Layout({
   themeConfig,
 }: NextraThemeLayoutProps) {
   const { pageMap } = pageOpts;
-  const { pages, latestPosts } = usePageOpts({
-    options: { pageOpts },
-  });
 
   const banner = themeConfig.banner;
-  // const latest = FilterMdxPages(pageMap);
-  // const pages = FilterPageType(pageMap);
+  const latestPosts = FilterMdxPages(pageMap);
+  const pages = FilterPageType(pageMap);
 
   return (
     <>

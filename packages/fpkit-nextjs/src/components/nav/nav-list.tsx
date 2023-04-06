@@ -4,23 +4,16 @@ import { NavItem } from "./nav";
 import { FrontMatter, PageMapItem, MdxFile } from "nextra";
 import { Tag } from "@fpkit/react";
 
-export interface Page {
-  kind: string;
-  name: string;
-  route: string;
-  frontMatter: FrontMatter;
-}
-
 export interface NavListProps {
   pageList: MdxFile[];
 }
 
 export const NavList = ({ pageList }: NavListProps) => {
   // throw an error if the pageList is empty or undefined
-  if (!pageList || pageList.length === 0) {
+  if (!pageList || pageList.length <= 0) {
     return (
       <Tag as="ul">
-        <li></li>
+        <li>Help?</li>
       </Tag>
     );
   }

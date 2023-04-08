@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.4](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.1.3...v0.1.4) (2023-04-08)
+
+### Features
+
+- 🏗️ resolve the issue with the nav list types ([2bfb59a](https://github.com/shawn-sandy/fpkit-nextjs/commit/2bfb59ad99ec9cda78b9949e269a6694ab979f44))
+- 🤩 add mdx-components to theme-config ([2ee1cc7](https://github.com/shawn-sandy/fpkit-nextjs/commit/2ee1cc79a0ef53975c170be406e9eb47871292ee))
+
 ## [0.1.3](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.1.2...v0.1.3) (2023-04-05)
 
 ### Bug Fixes

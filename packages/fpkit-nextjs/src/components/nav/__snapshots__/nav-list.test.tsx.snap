@@ -5,26 +5,23 @@ exports[`Nav renders correctly > renders without crashing 1`] = `
   <ul>
     <li>
       <a
-        href="/posts"
-        style="text-transform: capitalize;"
+        href="/articles"
       >
-        Posts
+        Articles
       </a>
     </li>
     <li>
       <a
         href="/"
-        style="text-transform: capitalize;"
       >
         About
       </a>
     </li>
     <li>
       <a
-        href="/articles"
-        style="text-transform: capitalize;"
+        href="/post"
       >
-        Articles
+        Posts
       </a>
     </li>
   </ul>

@@ -15,7 +15,7 @@ describe("Nav renders correctly", () => {
     // 👉 render(<ComponentName>Link</ComponentName>);
     render(
       <Nav>
-        <NavList pageList={navListItems} />
+        <NavList post={navListItems} />
       </Nav>
     );
     const nav = screen.getByRole("navigation");

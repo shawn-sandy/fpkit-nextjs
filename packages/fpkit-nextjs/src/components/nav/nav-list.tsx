@@ -1,36 +1,27 @@
-import React from "react";
-import { NavItem } from "./nav";
-
-import { FrontMatter, PageMapItem, MdxFile } from "nextra";
+import { PageOpts, MdxFile, FrontMatter } from "nextra";
 import { Tag } from "@fpkit/react";
+import Link from "next/link";
+import React from "react";
 
-export interface NavListProps {
-  pageList: MdxFile[];
-}
+export type NavListTypes = {
+  postList?: MdxFile[];
+} & FrontMatter;
 
-export const NavList = ({ pageList }: NavListProps) => {
-  // throw an error if the pageList is empty or undefined
-  if (!pageList || pageList.length <= 0) {
-    return (
-      <Tag as="ul">
-        <li>Help?</li>
-      </Tag>
-    );
-  }
-
-  const sorted: MdxFile[] = [...pageList].sort((a, b) =>
-    a.frontMatter.navKey > b.frontMatter.navKey ? 1 : -1
-  );
-
+export const NavList = ({ postList, ...props }: NavListTypes) => {
+  if (!postList) return null;
   return (
-    <Tag as="ul">
-      {sorted.map((page) => (
-        <NavItem route={page.route} key={React.useId()}>
-          {page.frontMatter?.navTitle ?? page.frontMatter.title}
-        </NavItem>
-      ))}
+    <Tag as="ul" key={React.useId()} {...props}>
+      {postList?.map((item) => {
+        const { route } = item;
+        return (
+          <Tag as="li">
+            <Link href={route}>{item.frontMatter?.title}</Link>
+          </Tag>
+        );
+      })}
     </Tag>
   );
 };
 
 export default NavList;
+NavList.displayName = "NavList";

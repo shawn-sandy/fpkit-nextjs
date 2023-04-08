@@ -29,11 +29,13 @@ export default function Layout({
   const latestPosts = FilterMdxPages(pageMap);
   const pages = FilterPageType(pageMap);
 
+  console.log("pages", pages);
+
   return (
     <>
       <Nav>
         <NavBrand logo={themeConfig.brand.logo} url={themeConfig.brand.url} />
-        <NavList pageList={pages} />
+        <NavList postList={pages} />
       </Nav>
 
       <ThemeHeader

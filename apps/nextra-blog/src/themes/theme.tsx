@@ -35,7 +35,7 @@ export default function Layout({
     <>
       <Nav>
         <NavBrand logo={themeConfig.brand.logo} url={themeConfig.brand.url} />
-        <NavList postList={pages} />
+        <NavList pages={pages} />
       </Nav>
 
       <ThemeHeader

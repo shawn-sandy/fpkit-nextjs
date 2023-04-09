@@ -13,7 +13,7 @@ describe("Nav renders correctly", () => {
   test("renders without crashing", async () => {
     render(
       <Nav>
-        <NavList postList={navListItems} />
+        <NavList pages={navListItems} />
       </Nav>
     );
     const nav = screen.getByRole("navigation");

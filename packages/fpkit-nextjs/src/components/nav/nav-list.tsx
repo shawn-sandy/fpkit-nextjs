@@ -4,14 +4,14 @@ import Link from "next/link";
 import React from "react";
 
 export type NavListTypes = {
-  postList?: MdxFile[];
+  pages?: MdxFile[];
 } & FrontMatter;
 
-export const NavList = ({ postList, ...props }: NavListTypes) => {
-  if (!postList) return null;
+export const NavList = ({ pages, ...props }: NavListTypes) => {
+  if (!pages) return null;
   return (
     <Tag as="ul" key={React.useId()} {...props}>
-      {postList?.map((item) => {
+      {pages?.map((item) => {
         const { route } = item;
         return (
           <Tag as="li">

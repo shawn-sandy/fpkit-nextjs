@@ -35,7 +35,12 @@ export function FilterMdxPages(pages: PageMapItem[], sortBy: SortBy = 'date', so
     return mdxPages;
 }
 
-
+/**
+ * Filter a list of pages and return only the pages with the specified frontMatter type
+ * @param pages array of pages
+ * @param type the type defined in the frontmatter
+ * @returns 
+ */
 export function FilterPageType(pages: PageMapItem[], type: string = 'page'): MdxFile[] {
     const results: MdxFile[] = [];
 
@@ -72,8 +77,6 @@ export function sortMdxPages(mdxPages: MdxFile[], sortBy: SortBy, sortOrder: Sor
         }
     });
 }
-
-
 
 export function paginateMdxPages(mdxPages: MdxFile[], limit: number, currentPage: number): {
     totalPages: number,

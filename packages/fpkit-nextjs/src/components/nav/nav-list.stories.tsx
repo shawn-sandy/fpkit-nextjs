@@ -21,7 +21,7 @@ type Story = StoryObj<typeof NavList>;
 
 export const List: Story = {
   args: {
-    postList: navListItems,
+    pages: navListItems,
   },
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);

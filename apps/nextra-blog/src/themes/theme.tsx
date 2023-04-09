@@ -29,8 +29,6 @@ export default function Layout({
   const latestPosts = FilterMdxPages(pageMap);
   const pages = FilterPageType(pageMap);
 
-  console.log("pages", pages);
-
   return (
     <>
       <Nav>

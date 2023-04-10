@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.5](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.1.4...v0.1.5) (2023-04-10)
+
+### Features
+
+- add Frontmatter to Nextra Blog ([909737f](https://github.com/shawn-sandy/fpkit-nextjs/commit/909737f95f7cc8c301ced1032493c868dc4f3b4a))
+
 ## [0.1.4](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.1.3...v0.1.4) (2023-04-08)
 
 ### Features

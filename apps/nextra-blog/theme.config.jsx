@@ -19,6 +19,8 @@ export default {
     logo: <span>FPKIT NEXTRA (DEV)</span>,
     url: "/",
   },
+  siteDescription: "A simple easy to use nextra theme",
+  siteName: "FPKIT NEXTRA",
   banner: {
     title: "FPKIT NEXTRA",
     description: "A simple easy to use nextra theme",

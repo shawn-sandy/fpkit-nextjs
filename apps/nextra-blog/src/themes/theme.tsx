@@ -1,4 +1,5 @@
 import type { NextraThemeLayoutProps } from "nextra";
+import Head from "next/head";
 import useBlogContext from "nextra-theme-blog";
 import React from "react";
 
@@ -23,7 +24,7 @@ export default function Layout({
   pageOpts,
   themeConfig,
 }: NextraThemeLayoutProps) {
-  const { pageMap } = pageOpts;
+  const { pageMap, title } = pageOpts;
 
   const banner = themeConfig.banner;
   const latestPosts = FilterMdxPages(pageMap);
@@ -31,6 +32,9 @@ export default function Layout({
 
   return (
     <>
+      <Head>
+        <title>{`${themeConfig.siteName} -  ${title}`}</title>
+      </Head>
       <Nav>
         <NavBrand logo={themeConfig.brand.logo} url={themeConfig.brand.url} />
         <NavList pages={pages} />

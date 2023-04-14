@@ -15,7 +15,7 @@
     "publish:release": "lerna publish major --no-private --conventional-commits -m \"chore(next): publish release \""
   },
   "dependencies": {
-    "@shawnsandy/first-paint": "^2.17.47",
+    "@shawnsandy/first-paint": "^2.17.49",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -40,12 +40,12 @@
     "@storybook/test-runner": "^0.8.0",
     "@storybook/testing-library": "0.0.14-next.1",
     "@storybook/testing-react": "^1.3.0",
-    "@types/react": "^18.0.32",
+    "@types/react": "^18.0.35",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^3.1.0",
     "lerna": "^5.6.2",
     "prop-types": "^15.8.1",
-    "storybook": "7.0.0-rc.6",
+    "storybook": "^7.0.4",
     "typescript": "^4.9.5",
     "vite": "^4.2.1"
   }

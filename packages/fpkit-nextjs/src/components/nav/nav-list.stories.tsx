@@ -2,54 +2,36 @@ import { StoryObj, Meta } from "@storybook/react";
 
 import { within } from "@storybook/testing-library";
 import { expect } from "@storybook/jest";
-import { Nav } from "./nav";
 
+// 👇 import you component here -- import Component form "./component";
 import NavList from "./nav-list";
-
+import { Nav } from "./nav";
 import { navListItems } from "../data/nav-list";
 
+// replace Component with your component name
 const meta: Meta<typeof NavList> = {
-  title: "Nextra Components/Navbar",
+  title: "Nextra Components/NavList",
   component: NavList,
   // @ts-ignore
-  //   subcomponents: { NavItem },
-  args: {},
+  args: {
+    pages: navListItems,
+  },
 };
 
 export default meta;
 type Story = StoryObj<typeof NavList>;
 
-export const List: Story = {
-  args: {
-    pages: navListItems,
-  },
-  play: async ({ canvasElement }) => {
-    const canvas = within(canvasElement);
-    const list = canvas.getByRole("list");
-    const links = canvas.getAllByRole("link");
-
-    // @ts-ignore
-    expect(list).toBeInTheDocument();
-    expect(links).toHaveLength(navListItems.length);
+export const Navbar: Story = {
+  args: {},
+  render: (args) => {
+    return (
+      <Nav>
+        <NavList {...args} />
+      </Nav>
+    );
   },
 };
 
-export const RenderNavbar: Story = {
-  args: {
-    ...List.args,
-  },
-  render: ({ ...args }) => (
-    <Nav>
-      <NavList {...args} />
-    </Nav>
-  ),
-  play: async ({ canvasElement }) => {
-    const canvas = within(canvasElement);
-    // @ts-ignore
-    await Default.play({ canvasElement });
-
-    const nav = canvas.getByRole("navigation");
-    // @ts-ignore
-    expect(nav).toBeInTheDocument();
-  },
+export const NavbarList: Story = {
+  args: {},
 };

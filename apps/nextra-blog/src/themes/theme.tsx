@@ -33,7 +33,11 @@ export default function Layout({
   return (
     <>
       <Head>
-        <title>{`${themeConfig.siteName} -  ${title}`}</title>
+        <title>{`${themeConfig.siteName} - ${title}`}</title>
+        <script src="https://unpkg.com/shiki"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/shiki"></script>
+        <link rel="stylesheet" href="./highlight.css" />
       </Head>
       <Nav>
         <NavBrand logo={themeConfig.brand.logo} url={themeConfig.brand.url} />

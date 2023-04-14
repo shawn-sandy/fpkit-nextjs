@@ -1,4 +1,4 @@
-import { PageOpts, MdxFile, FrontMatter } from "nextra";
+import { MdxFile, FrontMatter } from "nextra";
 import { Tag } from "@fpkit/react";
 import Link from "next/link";
 import React from "react";

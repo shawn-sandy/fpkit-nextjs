@@ -7,10 +7,11 @@ export type TocTypes = {
 
 export const Toc = ({ children, className }: TocTypes) => {
   return (
-    <Tag as="div" className={`toc ${className}`} data-style>
-      {children}
+    <Tag as="li" data-style>
+      {children ?? "No Table of Contents"}
     </Tag>
   );
 };
 
 export default Toc;
+Toc.displayName = "Toc";

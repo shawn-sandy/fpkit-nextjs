@@ -26,6 +26,7 @@ export type TocItemTypes = {
 };
 
 export const Toc = ({ items, dataStyles }: TocTypes) => {
+  if (items.length <= 1) return null;
   return (
     <Tag as="ul" data-fp-list={`unstyled ${dataStyles}`}>
       {!!items &&

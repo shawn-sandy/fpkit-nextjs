@@ -2,7 +2,7 @@
   "name": "@fpkit/nextjs",
   "description": "Nextjs components",
   "private": false,
-  "version": "0.1.5",
+  "version": "0.1.6",
   "type": "module",
   "source": "src/index.ts",
   "main": "./libs/index.cjs",

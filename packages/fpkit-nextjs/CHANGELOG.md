@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.6](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.1.5...v0.1.6) (2023-04-15)
+
+### Features
+
+- 🏗️ add basic toc component ([1915195](https://github.com/shawn-sandy/fpkit-nextjs/commit/1915195a6997072ba961e35b83d9ba9de49ad548))
+- 🤩 add <head/> call to the theme.tsx ([6158340](https://github.com/shawn-sandy/fpkit-nextjs/commit/61583409db17e5cf2755203ca69d1669151099c3))
+- 🤩 add a toc component ([5eee3f5](https://github.com/shawn-sandy/fpkit-nextjs/commit/5eee3f5e06de105627f5f2c31d5366698ba766b7))
+- add table w/div [data-scroll] wrapper to mdx components ([2010320](https://github.com/shawn-sandy/fpkit-nextjs/commit/201032069a67c3184b37a15c0c7c1e5a98877957))
+
 ## [0.1.5](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.1.4...v0.1.5) (2023-04-10)
 
 **Note:** Version bump only for package @fpkit/nextjs

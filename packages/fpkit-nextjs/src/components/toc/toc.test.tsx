@@ -16,4 +16,13 @@ describe("App renders correctly", () => {
     expect(await axe(toc)).toHaveNoViolations();
     expect(toc).toMatchSnapshot();
   });
+
+  it("renders the correct number of items", () => {
+    render(<Toc items={headings} />);
+    const toc = screen.getByRole("list");
+    const links = screen.getAllByRole("link");
+
+    expect(toc.children.length).toBe(headings.length);
+    expect(links.length).toBe(headings.length);
+  });
 });

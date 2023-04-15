@@ -2,47 +2,37 @@
 
 exports[`App renders correctly > renders without crashing 1`] = `
 <ul
-  data-style="true"
+  data-fp-list="unstyled undefined"
 >
-  <li
-    data-list="unstyled"
-  >
+  <li>
     <a
       href="#test-filename-line-highlighting-and-empty-lines"
     >
       Test filename, line highlighting and empty lines
     </a>
   </li>
-  <li
-    data-list="unstyled"
-  >
+  <li>
     <a
       href="#test-showlinenumbers-and-word-highlighting"
     >
       Test showLineNumbers and word highlighting
     </a>
   </li>
-  <li
-    data-list="unstyled"
-  >
+  <li>
     <a
       href="#test-highlighting-inline-code"
     >
       Test highlighting inline code
     </a>
   </li>
-  <li
-    data-list="unstyled"
-  >
+  <li>
     <a
       href="#test-without-specified-language"
     >
       Test without specified language
     </a>
   </li>
-  <li
-    data-list="unstyled"
-  >
+  <li>
     <a
       href="#test-link-in-code"
     >

@@ -10,7 +10,7 @@ import { Tag } from "@fpkit/react";
 export type TocTypes = {
   items: Array<any>;
   children?: React.ReactNode | string;
-  className?: string;
+  dataStyles?: string;
 };
 
 /**
@@ -25,18 +25,20 @@ export type TocItemTypes = {
   id: string;
 };
 
-export const Toc = ({ items, className }: TocTypes) => {
+export const Toc = ({ items, dataStyles }: TocTypes) => {
   return (
-    <Tag as="ul" data-style>
+    <Tag as="ul" data-fp-list={`unstyled ${dataStyles}`}>
       {!!items &&
-        items.map((item: TocItemTypes) => <TocItems key={item.id} {...item} />)}
+        items.map((item: TocItemTypes) => (
+          <TocItems key={React.useId()} {...item} />
+        ))}
     </Tag>
   );
 };
 
 export const TocItems = ({ depth, value, id }: TocItemTypes) => {
   return (
-    <li data-list="unstyled">
+    <li>
       <a href={`#${id}`}>{value}</a>
     </li>
   );

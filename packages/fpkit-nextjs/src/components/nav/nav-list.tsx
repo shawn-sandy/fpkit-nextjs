@@ -14,7 +14,7 @@ export const NavList = ({ pages, ...props }: NavListTypes) => {
       {pages?.map((item) => {
         const { route } = item;
         return (
-          <Tag as="li">
+          <Tag as="li" key={React.useId()}>
             <Link href={route}>{item.frontMatter?.title}</Link>
           </Tag>
         );

@@ -24,7 +24,7 @@ export default function Layout({
   pageOpts,
   themeConfig,
 }: NextraThemeLayoutProps) {
-  const { pageMap, title } = pageOpts;
+  const { pageMap, title, headings } = pageOpts;
 
   const banner = themeConfig.banner;
   const latestPosts = FilterMdxPages(pageMap);

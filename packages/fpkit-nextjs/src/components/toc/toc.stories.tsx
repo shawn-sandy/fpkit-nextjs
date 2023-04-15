@@ -2,9 +2,9 @@ import { StoryObj, Meta } from "@storybook/react";
 
 import { within } from "@storybook/testing-library";
 import { expect } from "@storybook/jest";
+import { headings } from "./toc.test.data";
 
 import Toc from "./toc";
-// replace Component with your component name
 const meta: Meta<typeof Toc> = {
   title: "Nextra Components/Toc",
   component: Toc,
@@ -13,6 +13,9 @@ const meta: Meta<typeof Toc> = {
     children: {
       control: { type: "object" },
     },
+  },
+  args: {
+    items: headings,
   },
 };
 

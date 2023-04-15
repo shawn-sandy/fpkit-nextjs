@@ -8,6 +8,7 @@ export * from './components/layout/header';
 export * from './components/layout/footer';
 export * from './components/layout/landmarks';
 export * from './components/posts/post-list';
+export * from './components/toc/toc';
 
 export { usePageOpts } from './hooks/useOpts';
 export { useConfig } from './hooks/useConfig';

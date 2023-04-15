@@ -13,6 +13,7 @@ import {
   NavBrand,
   FilterMdxPages,
   FilterPageType,
+  Toc,
 } from "@fpkit/nextjs";
 
 import { usePageOpts, useConfig } from "@fpkit/nextjs/libs/hooks";
@@ -29,6 +30,10 @@ export default function Layout({
   const banner = themeConfig.banner;
   const latestPosts = FilterMdxPages(pageMap);
   const pages = FilterPageType(pageMap);
+
+  const SideBar = () => {
+    return <Toc items={headings} className="toc" />;
+  };
 
   return (
     <>
@@ -51,7 +56,7 @@ export default function Layout({
         description={banner.description}
       />
 
-      <ThemeMain>
+      <ThemeMain sideBar={<SideBar />}>
         {pageOpts.route === "/" && latestPosts.length > 0 ? (
           <PostsList postList={latestPosts} showDescription />
         ) : (

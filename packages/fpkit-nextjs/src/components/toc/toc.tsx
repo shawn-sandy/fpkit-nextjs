@@ -29,8 +29,8 @@ export const Toc = ({ items, children, dataStyles }: TocTypes) => {
   if (items.length <= 1) return null;
   return (
     <Tag>
+      {children ?? <Tag as="h3">Table of contents</Tag>}
       <Tag as="ul" data-fp-list={`unstyled ${dataStyles}`}>
-        {children ?? <Tag as="h3">Table of contents</Tag>}
         {!!items &&
           items.map((item: TocItemTypes) => (
             <TocItems key={React.useId()} {...item} />

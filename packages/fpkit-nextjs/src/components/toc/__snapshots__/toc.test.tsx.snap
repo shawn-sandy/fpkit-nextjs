@@ -1,0 +1,43 @@
+// Vitest Snapshot v1
+
+exports[`App renders correctly > renders without crashing 1`] = `
+<ul
+  data-fp-list="unstyled undefined"
+>
+  <li>
+    <a
+      href="#test-filename-line-highlighting-and-empty-lines"
+    >
+      Test filename, line highlighting and empty lines
+    </a>
+  </li>
+  <li>
+    <a
+      href="#test-showlinenumbers-and-word-highlighting"
+    >
+      Test showLineNumbers and word highlighting
+    </a>
+  </li>
+  <li>
+    <a
+      href="#test-highlighting-inline-code"
+    >
+      Test highlighting inline code
+    </a>
+  </li>
+  <li>
+    <a
+      href="#test-without-specified-language"
+    >
+      Test without specified language
+    </a>
+  </li>
+  <li>
+    <a
+      href="#test-link-in-code"
+    >
+      Test link in code
+    </a>
+  </li>
+</ul>
+`;

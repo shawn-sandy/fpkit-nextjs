@@ -10,10 +10,10 @@ import {
   NavList,
   Nav,
   NavBrand,
-} from "@fpkit/nextjs";
+} from "@fpkit/nextra";
 
-import { usePageOpts, useConfig } from "@fpkit/nextjs/libs/hooks";
-import { FilterMdxPages } from "@fpkit/nextjs/libs/libs";
+import { usePageOpts, useConfig } from "@fpkit/nextra/libs/hooks";
+import { FilterMdxPages } from "@fpkit/nextra/libs/libs";
 import { MDXProvider } from "nextra/mdx";
 import "@shawnsandy/first-paint/dist/css/libs/all.min.css";
 

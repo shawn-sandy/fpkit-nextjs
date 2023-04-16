@@ -9,7 +9,7 @@ import { headings } from "./toc.test.data";
 // 👉 import ComponentName from "./component-name";
 import Toc from "./toc";
 describe("App renders correctly", () => {
-  test("renders without crashing", async () => {
+  it("renders without crashing", async () => {
     render(<Toc items={headings} />);
     const toc = screen.getByRole("list");
     expect(toc).toBeDefined();

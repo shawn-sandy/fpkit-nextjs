@@ -25,14 +25,17 @@ export type TocItemTypes = {
   id: string;
 };
 
-export const Toc = ({ items, dataStyles }: TocTypes) => {
+export const Toc = ({ items, children, dataStyles }: TocTypes) => {
   if (items.length <= 1) return null;
   return (
-    <Tag as="ul" data-fp-list={`unstyled ${dataStyles}`}>
-      {!!items &&
-        items.map((item: TocItemTypes) => (
-          <TocItems key={React.useId()} {...item} />
-        ))}
+    <Tag>
+      <Tag as="ul" data-fp-list={`unstyled ${dataStyles}`}>
+        {children ?? <Tag as="h3">Table of contents</Tag>}
+        {!!items &&
+          items.map((item: TocItemTypes) => (
+            <TocItems key={React.useId()} {...item} />
+          ))}
+      </Tag>
     </Tag>
   );
 };

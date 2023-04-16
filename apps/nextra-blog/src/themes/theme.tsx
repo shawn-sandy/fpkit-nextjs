@@ -14,9 +14,11 @@ import {
   FilterMdxPages,
   FilterPageType,
   Toc,
-} from "@fpkit/nextjs";
+} from "@fpkit/nextra";
 
-import { usePageOpts, useConfig } from "@fpkit/nextjs/libs/hooks";
+import { Tag } from "@fpkit/react";
+
+import { usePageOpts, useConfig } from "@fpkit/nextra/libs/hooks";
 import { MDXProvider } from "nextra/mdx";
 import "@shawnsandy/first-paint/dist/css/libs/all.min.css";
 
@@ -32,17 +34,24 @@ export default function Layout({
   const pages = FilterPageType(pageMap);
 
   const SideBar = () => {
-    return <Toc items={headings} className="toc" />;
+    return (
+      <>
+        {" "}
+        <Toc items={headings} />
+        <Tag>
+          <Tag as="h3" data-fp-text="h3">
+            Recent Posts
+          </Tag>
+          <PostsList postList={latestPosts} />
+        </Tag>
+      </>
+    );
   };
 
   return (
     <>
       <Head>
         <title>{`${themeConfig.siteName} - ${title}`}</title>
-        <script src="https://unpkg.com/shiki"></script>
-
-        <script src="https://cdn.jsdelivr.net/npm/shiki"></script>
-        <link rel="stylesheet" href="./highlight.css" />
       </Head>
       <Nav>
         <NavBrand logo={themeConfig.brand.logo} url={themeConfig.brand.url} />

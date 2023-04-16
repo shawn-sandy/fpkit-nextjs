@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.1.6...v0.2.0) (2023-04-16)
+
+### Build System
+
+- 📛 rename fpkit/nextjs to fpkit/nextra ([a6431be](https://github.com/shawn-sandy/fpkit-nextjs/commit/a6431be600bada23557a94b8c1dda926a036ca0c))
+
+### Features
+
+- 🌟 conditionally hide toc if items <=1 ([a19ed68](https://github.com/shawn-sandy/fpkit-nextjs/commit/a19ed686481d5ab7beea54bfa9de1b601e2bcbcd))
+- 🚧 add/update keys for Navlist and Toc ([b6b65aa](https://github.com/shawn-sandy/fpkit-nextjs/commit/b6b65aaef1b947bf7c3013f8b1df25c3c64a9990))
+
+### BREAKING CHANGES
+
+- 🧨 fpkit/nextjs is now fpkit/nextra
+
 ## [0.1.6](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.1.5...v0.1.6) (2023-04-15)
 
 ### Features

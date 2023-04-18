@@ -1,8 +1,6 @@
 import { MDXComponents } from "@fpkit/nextra/libs/libs";
-import { useConfig } from "nextra-theme-blog";
 
 export default {
-  // const { frontMatter } = useConfig();
   head: (
     <>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />

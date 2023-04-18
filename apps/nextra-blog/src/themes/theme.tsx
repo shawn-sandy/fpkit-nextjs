@@ -1,7 +1,8 @@
 import type { NextraThemeLayoutProps } from "nextra";
 import Head from "next/head";
-import useBlogContext from "nextra-theme-blog";
+import { useConfig } from "nextra-theme-docs";
 import React from "react";
+import { getPagesUnderRoute, getAllPages } from "nextra/context";
 
 import {
   ThemeMain,
@@ -16,9 +17,6 @@ import {
   Toc,
 } from "@fpkit/nextra";
 
-import { Tag } from "@fpkit/react";
-
-import { usePageOpts, useConfig } from "@fpkit/nextra/libs/hooks";
 import { MDXProvider } from "nextra/mdx";
 import "@shawnsandy/first-paint/dist/css/libs/all.min.css";
 
@@ -28,6 +26,8 @@ export default function Layout({
   themeConfig,
 }: NextraThemeLayoutProps) {
   const { pageMap, title, headings } = pageOpts;
+  // console.log(getPagesUnderRoute("/posts"));
+  // console.log(getAllPages());
 
   const banner = themeConfig.banner;
   const latestPosts = FilterMdxPages(pageMap);
@@ -36,14 +36,11 @@ export default function Layout({
   const SideBar = () => {
     return (
       <>
-        {" "}
         <Toc items={headings} />
-        <Tag>
-          <Tag as="h3" data-fp-text="h3">
-            Recent Posts
-          </Tag>
+        <div>
+          <h3 data-fp-text="h3">Recent Posts</h3>
           <PostsList postList={latestPosts} />
-        </Tag>
+        </div>
       </>
     );
   };

@@ -17,15 +17,15 @@ export const ArticleList = ({
 }: ArticleListProps) => {
   return (
     <Article>
-      <Link href={route}>
-        <Title elm="h2">{title}</Title>
-      </Link>
+      <Title elm="h2">
+        <Link href={route}>{title}</Link>
+      </Title>
       <p>{description}</p>
-      <p>
+      <Tag>
         <Link href={route} data-btn data-variant="primary">
           {(linkText ??= "Continue Reading")}
         </Link>
-      </p>
+      </Tag>
     </Article>
   );
 };

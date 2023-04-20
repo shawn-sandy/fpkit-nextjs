@@ -17,14 +17,17 @@ export const PageList = ({ data }: PageListTypes) => {
   return (
     <>
       {data?.map((page) => (
-        <ArticleList
-          key={page.route}
-          // @ts-ignore
-          title={page.frontMatter?.title}
-          route={page.route}
-          // @ts-ignore
-          description={page?.frontMatter?.description}
-        />
+        <>
+          <ArticleList
+            key={page.route}
+            // @ts-ignore
+            title={page.frontMatter?.title}
+            route={page.route}
+            // @ts-ignore
+            description={page?.frontMatter?.description}
+          />
+          <hr />
+        </>
       ))}
     </>
   );

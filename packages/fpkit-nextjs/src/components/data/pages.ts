@@ -2,7 +2,7 @@
 
 import { Page } from "nextra"
 
-export const page: Page[] = [
+export const pages: Page[] = [
     {
         "kind": "MdxPage",
         "name": "table",

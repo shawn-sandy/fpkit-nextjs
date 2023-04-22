@@ -1,12 +1,13 @@
-import { Tag, Article, Text, Title } from "@fpkit/react";
-import React from "react";
+import { Tag, Article, Title, Img } from "@fpkit/react";
 import Link from "next/link";
+import React from "react";
 
 export type ArticleListProps = {
-  title: string;
   description: string;
+  title: string;
   route: string;
   linkText?: string;
+  img?: string;
 };
 
 export const ArticleList = ({
@@ -14,17 +15,21 @@ export const ArticleList = ({
   description,
   linkText,
   route,
+  img,
 }: ArticleListProps) => {
   return (
     <Article>
+      <Tag as="figure">
+        <Img src={img ?? ""} alt={title} width={820} height={320} />
+      </Tag>
       <Title elm="h2">
-        <Link href={route}>{title}</Link>
+        <a href={route}>{title}</a>
       </Title>
       <p>{description}</p>
       <Tag>
-        <Link href={route} data-btn data-variant="primary">
+        <a href={route} data-btn data-variant="primary">
           {(linkText ??= "Continue Reading")}
-        </Link>
+        </a>
       </Tag>
     </Article>
   );

@@ -1,6 +1,5 @@
 import { PageOpts, MdxFile } from "nextra";
-import { Article, Tag, Title } from "@fpkit/react";
-import Link from "next/link";
+import { Article, Tag, Title, Link } from "@fpkit/react";
 import React from "react";
 
 export type listProps = Pick<PageOpts, "pageMap">;

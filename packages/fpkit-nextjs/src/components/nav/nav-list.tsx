@@ -1,6 +1,5 @@
 import { MdxFile, FrontMatter } from "nextra";
-import { Tag } from "@fpkit/react";
-import Link from "next/link";
+import { Tag, Link } from "@fpkit/react";
 import React from "react";
 
 export type NavListTypes = {

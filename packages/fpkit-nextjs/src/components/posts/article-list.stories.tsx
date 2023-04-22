@@ -23,6 +23,6 @@ const meta: Meta<typeof ArticleList> = {
 export default meta;
 type Story = StoryObj<typeof ArticleList>;
 
-export const MyComponent: Story = {
+export const ArticleListComponent: Story = {
   args: {},
 };

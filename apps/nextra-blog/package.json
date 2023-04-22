@@ -13,11 +13,11 @@
   },
   "dependencies": {
     "@fpkit/nextra": "workspace:*",
-    "@shawnsandy/first-paint": "^2.17.49",
-    "next": "^13.3.0",
-    "nextra": "^2.4.0",
-    "nextra-theme-blog": "^2.4.0",
-    "nextra-theme-docs": "^2.4.0",
+    "@shawnsandy/first-paint": "^2.17.50",
+    "next": "^13.3.1",
+    "nextra": "^2.4.1",
+    "nextra-theme-blog": "^2.4.1",
+    "nextra-theme-docs": "^2.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

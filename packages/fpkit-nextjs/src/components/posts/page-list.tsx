@@ -8,10 +8,7 @@ export type PageListTypes = {
   data: Page[];
 };
 
-export const PageList = ({ data }: PageListTypes) => {
-  let pages: Page[];
-  //   if (!group) pages = getAllPages();
-
+export const PageList = ({ data, group }: PageListTypes) => {
   if (data.length === 0) return null;
 
   return (

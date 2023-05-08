@@ -1,7 +1,8 @@
-import "./globals.css";
-// import "@shawnsandy/first-paint/dist/css/components/nav";
+// import "@shawnsandy/first-paint/dist/css/libs/all.min.css";
 import "@shawnsandy/first-paint/dist/css/components/nav.min.css";
+import "./globals.css";
 import { Inter } from "next/font/google";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +18,45 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <nav>
+          <div>
+            <Link href="/about">Home</Link>
+          </div>
+          <ul>
+            <li>Blog</li>
+            <li>Docs</li>
+            <li>Support</li>
+          </ul>
+        </nav>
+        {children}
+        <footer>
+          <section role="grid">
+            <div role="row">
+              <div role="gridcell">
+                <h5>Grid col</h5>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
+                  nulla totam dolorem nemo facere ex expedita illum laboriosam
+                  sit. Ea laboriosam rem omnis sit autem temporibus ipsum maxime
+                  dignissimos id.
+                </p>
+              </div>
+              <div role="gridcell">
+                <h5>Grid col</h5>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
+                  nulla totam dolorem nemo facere ex expedita illum laboriosam
+                  sit. Ea laboriosam rem omnis sit autem temporibus ipsum maxime
+                  dignissimos id.
+                </p>
+              </div>
+            </div>
+          </section>
+          <hr />
+          <div>Copyright &copy; 2022</div>
+        </footer>
+      </body>
     </html>
   );
 }

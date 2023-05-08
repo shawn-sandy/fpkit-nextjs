@@ -5,11 +5,6 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <nav>
-        <div>
-          <Link href="/about">Home</Link>
-        </div>
-      </nav>
       <main className={styles.main}>
         <div className={styles.description}>
           {/* <p>

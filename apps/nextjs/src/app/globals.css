@@ -105,3 +105,12 @@ a {
     color-scheme: dark;
   }
 }
+
+
+
+ img[src$=".svg"] {
+   /* all: unset; */
+    height: auto; 
+    object-fit: var(--img-obj-fit, auto);
+    max-width: 100%;
+  }

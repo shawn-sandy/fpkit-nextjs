@@ -50,10 +50,6 @@ export default function Layout({
       <Head>
         <title>{`${themeConfig.siteName} - ${title}`}</title>
       </Head>
-      <Nav>
-        <NavBrand logo={themeConfig.brand.logo} url={themeConfig.brand.url} />
-        <NavList pages={pages} />
-      </Nav>
 
       <ThemeHeader
         title={banner.title}

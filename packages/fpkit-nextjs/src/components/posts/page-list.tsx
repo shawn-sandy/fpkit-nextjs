@@ -9,7 +9,7 @@ export type PageListTypes = {
 };
 
 export const PageList = ({ data, group }: PageListTypes) => {
-  if (data.length === 0) return null;
+  if (data.length <= 0) return null;
 
   return (
     <>

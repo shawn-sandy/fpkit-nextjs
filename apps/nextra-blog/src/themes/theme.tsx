@@ -50,6 +50,10 @@ export default function Layout({
       <Head>
         <title>{`${themeConfig.siteName} - ${title}`}</title>
       </Head>
+      <Nav>
+        <NavBrand logo={themeConfig.brand.logo} url={themeConfig.brand.url} />
+        <NavList pages={pages} />
+      </Nav>
 
       <ThemeHeader
         title={banner.title}
@@ -63,6 +67,12 @@ export default function Layout({
           <PostsList postList={latestPosts} showDescription />
         ) : (
           <MDXProvider components={themeConfig.components}>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut nisi
+              voluptatibus quidem tempora autem odit hic! Tempora modi saepe
+              possimus harum, odio non vitae quisquam a ad quis deleniti
+              recusandae.
+            </p>
             {children}
           </MDXProvider>
         )}

@@ -72,5 +72,5 @@ export const ThemeHeader = ({
     </HeaderBase>
   );
 };
-ThemeHeader.displayName = "Header";
 export default ThemeHeader;
+ThemeHeader.displayName = "Header";

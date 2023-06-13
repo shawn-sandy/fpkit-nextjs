@@ -1,8 +1,8 @@
 import "@shawnsandy/first-paint/dist/css/libs/all.min.css";
 import "./globals.css";
 import { Inter } from "next/font/google";
-import { Header } from "@fpkit/nextra";
-import { Title } from "@fpkit/react";
+import PageHeader from "@/components/page-header";
+import { Text } from "@fpkit/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,18 +19,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header>
-          <section>
-            <Title styles={{ "--fs": "var(--fs-10)" }}>Header Section</Title>
-            <p>
-              Labore est esse et nulla anim labore consequat veniam cupidatat
-              laborum adipisicing.
-            </p>
-            <p>
-              <button type="button">Default Button</button>
-            </p>
-          </section>
-        </Header>
+        <PageHeader title="Header Section">
+          <Text>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Necessitatibus, eius! In impedit natus odit optio sit voluptas
+            doloremque qui temporibus eum deleniti repellendus accusamus soluta
+            placeat, ab, quae, voluptatum eos!
+          </Text>
+        </PageHeader>
         {children}
       </body>
     </html>

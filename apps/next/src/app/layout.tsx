@@ -2,6 +2,7 @@ import "@shawnsandy/first-paint/dist/css/libs/all.min.css";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import { Header } from "@fpkit/nextra";
+import { Title } from "@fpkit/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,9 +19,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header styles={{ marginTop: "3rem" }}>
+        <Header>
           <section>
-            <h2>Header Section</h2>
+            <Title styles={{ "--fs": "var(--fs-10)" }}>Header Section</Title>
             <p>
               Labore est esse et nulla anim labore consequat veniam cupidatat
               laborum adipisicing.

@@ -4,6 +4,11 @@
 
 import { Tag } from "@fpkit/react";
 
+export interface LandmarkProps {
+  children: React.ReactNode;
+  styles?: {};
+}
+
 export const Header = ({
   children,
   ...props

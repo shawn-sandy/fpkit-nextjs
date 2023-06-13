@@ -117,7 +117,7 @@ importers:
   apps/next:
     specifiers:
       '@fpkit/nextra': workspace:*
-      '@fpkit/react': ^0.2.75
+      '@fpkit/react': ^0.2.76
       '@shawnsandy/first-paint': ^2.17.52
       '@types/node': 20.3.0
       '@types/react': 18.2.11
@@ -130,7 +130,7 @@ importers:
       typescript: 5.1.3
     dependencies:
       '@fpkit/nextra': link:../../packages/fpkit-nextjs
-      '@fpkit/react': 0.2.75_biqbaboplfbrettd7655fr4n2y
+      '@fpkit/react': 0.2.76_biqbaboplfbrettd7655fr4n2y
       '@shawnsandy/first-paint': 2.17.52
       '@types/node': 20.3.0
       '@types/react': 18.2.11
@@ -2558,13 +2558,13 @@ packages:
       react-dom: 18.2.0_react@18.2.0
     dev: false
 
-  /@fpkit/react/0.2.75_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-xWRt6Bt4FoWmcd94dnrGxUdy3/FP6b+fhhMu9AILOWALu4PyIUXrlUpBZNuueFkrHvqY29M/ViGYZG8T92KNIg==}
+  /@fpkit/react/0.2.76_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-ZlHXpxi90mYpRNFua52+UKlpZ+Hy1q6naDxm4gm9THuZ4qaWYNt+P/Q5aOeAVV8i6IuSoozpSyo5R6axaeDDbQ==}
     peerDependencies:
       react: ^18.0.0
       react-dom: ^18.0.0
     dependencies:
-      '@shawnsandy/first-paint': 2.17.52
+      '@shawnsandy/first-paint': 2.17.53
       focus-trap: 7.4.0
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -4842,6 +4842,10 @@ packages:
 
   /@shawnsandy/first-paint/2.17.52:
     resolution: {integrity: sha512-6iUisYORN8Q3Z8upNDXeqE49EZtasBpHvzKPXRTPuJZOKPQRTfSHp4qMFWnkI+Vq+H4WkonE1bd7yqHae9o1og==}
+    dev: false
+
+  /@shawnsandy/first-paint/2.17.53:
+    resolution: {integrity: sha512-rK3RzoJSYtR+XBTwXRL5U5JkiyBP9XpZEF7kK/Kiym2sf/aMOsM9lkaucTv1LEZWfE/00tz844POB5ghmhHKhw==}
     dev: false
 
   /@sideway/address/4.1.4:
@@ -7644,7 +7648,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.19.6_@babel+core@7.21.4
       magic-string: 0.27.0
       react-refresh: 0.14.0
-      vite: 4.3.1_6vbopsmvecpv7ltwnvncyd23zm
+      vite: 4.3.1
     transitivePeerDependencies:
       - supports-color
     dev: true

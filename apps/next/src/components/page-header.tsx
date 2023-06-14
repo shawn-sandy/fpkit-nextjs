@@ -9,7 +9,7 @@ export interface PageHeaderProps {
 }
 
 export const PageHeader = ({
-  title = "Header Section",
+  title = "Header Title",
   styles,
   children,
   ...props
@@ -18,7 +18,7 @@ export const PageHeader = ({
     <Header {...props}>
       <Title elm="h2" styles={{ "--fs": "var(--fs-10)" }}>
         {title}
-      </Title>{" "}
+      </Title>
       <>{children}</>
     </Header>
   );

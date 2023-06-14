@@ -18,17 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <PageHeader title="Header Section">
-          <Text>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Necessitatibus, eius! In impedit natus odit optio sit voluptas
-            doloremque qui temporibus eum deleniti repellendus accusamus soluta
-            placeat, ab, quae, voluptatum eos!
-          </Text>
-        </PageHeader>
-        {children}
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }

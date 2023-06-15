@@ -16,9 +16,7 @@ export const PageHeader = ({
 }: PageHeaderProps): JSX.Element => {
   return (
     <Header {...props}>
-      <Title elm="h2" styles={{ "--fs": "var(--fs-10)" }}>
-        {title}
-      </Title>
+      <Title elm="h2">{title}</Title>
       <>{children}</>
     </Header>
   );

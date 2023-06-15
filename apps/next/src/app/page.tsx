@@ -7,13 +7,8 @@ import { Main, Section } from "@fpkit/nextra";
 export default function Home() {
   return (
     <>
-      <PageHeader title="Header Section">
-        <Text>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Necessitatibus, eius! In impedit natus odit optio sit voluptas
-          doloremque qui temporibus eum deleniti repellendus accusamus soluta
-          placeat, ab, quae, voluptatum eos!
-        </Text>
+      <PageHeader title="Header Section" data-style="large">
+        <Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</Text>
       </PageHeader>
       <Main>
         <Section>

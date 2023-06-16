@@ -1,0 +1,14 @@
+// Vitest Snapshot v1
+
+exports[`<NavBrand/> > renders without crashing 1`] = `
+<h1
+  style="--fs: 1.2rem;"
+>
+  <a
+    href="/"
+    style="text-transform: capitalize;"
+  >
+    FPKit NextJS
+  </a>
+</h1>
+`;

@@ -1,0 +1,29 @@
+// Vitest Snapshot v1
+
+exports[`Nav renders correctly > renders without crashing 1`] = `
+<nav>
+  <ul>
+    <li>
+      <a
+        href="/articles"
+      >
+        Articles
+      </a>
+    </li>
+    <li>
+      <a
+        href="/"
+      >
+        About
+      </a>
+    </li>
+    <li>
+      <a
+        href="/post"
+      >
+        Posts
+      </a>
+    </li>
+  </ul>
+</nav>
+`;

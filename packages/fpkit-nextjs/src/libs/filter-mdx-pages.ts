@@ -17,11 +17,11 @@ export function FilterMdxPages(pages: PageMapItem[], sortBy: SortBy = 'date', so
 
     pages.forEach((item) => {
 
-        if (item.kind === "MdxPage" && item.frontMatter?.type !== 'page') {
+        if ((item.kind === "MdxPage" && !!item.frontMatter?.description) && item.frontMatter?.type !== 'page') {
             mdxPages.push(item);
         } else if (item.kind === "Folder" && item.children) {
             item.children.forEach((child) => {
-                if (child.kind === "MdxPage" && child.frontMatter?.type !== 'page') {
+                if (child.kind === "MdxPage" && child.frontMatter?.type !== 'page' && !!child.frontMatter?.description) {
                     mdxPages.push(child);
                 }
             });
@@ -33,6 +33,32 @@ export function FilterMdxPages(pages: PageMapItem[], sortBy: SortBy = 'date', so
     }
 
     return mdxPages;
+}
+
+/**
+ * Filter a list of pages and return only the pages with the specified frontMatter type
+ * @param pages array of pages
+ * @param type the type defined in the frontmatter
+ * @returns 
+ */
+export function FilterPageType(pages: PageMapItem[], type: string = 'page'): MdxFile[] {
+    const results: MdxFile[] = [];
+
+    pages.forEach((item) => {
+        if (item.kind === "MdxPage" && item.frontMatter?.type === type) {
+            results.push(item);
+        } else if (item.kind === 'Folder' && item.children) {
+            item.children.forEach((child) => {
+                if (child.kind === "MdxPage" && child.frontMatter?.type === 'page' && !!child.frontMatter?.description) {
+                    results.push(child);
+                }
+            });
+        }
+
+    });
+
+    return results;
+
 }
 
 export function sortMdxPages(mdxPages: MdxFile[], sortBy: SortBy, sortOrder: SortOrder): void {
@@ -51,8 +77,6 @@ export function sortMdxPages(mdxPages: MdxFile[], sortBy: SortBy, sortOrder: Sor
         }
     });
 }
-
-
 
 export function paginateMdxPages(mdxPages: MdxFile[], limit: number, currentPage: number): {
     totalPages: number,

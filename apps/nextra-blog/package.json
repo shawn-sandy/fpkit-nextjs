@@ -12,12 +12,16 @@
     "clean": "rimraf .next .turbo"
   },
   "dependencies": {
-    "@fpkit/nextjs": "workspace:*",
-    "next": "^13.2.4",
-    "nextra": "^2.2.20",
-    "nextra-theme-blog": "^2.2.20",
+    "@fpkit/nextra": "workspace:*",
+    "@shawnsandy/first-paint": "^2.17.51",
+    "flexsearch": "^0.7.31",
+    "next": "13.3.1",
+    "nextra": "^2.4.2",
+    "nextra-theme-blog": "^2.4.2",
+    "nextra-theme-docs": "^2.4.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "sharp": "^0.32.0"
   },
   "dependenciesMeta": {
     "nextra": {
@@ -27,5 +31,8 @@
       "injected": true
     }
   },
-  "version": null
+  "version": null,
+  "devDependencies": {
+    "@types/flexsearch": "^0.7.3"
+  }
 }

@@ -2,7 +2,7 @@ import React from "react";
 import { Tag, Title } from "@fpkit/react";
 import Nav, { NavItem } from "./nav";
 
-import { MdxFile, Folder } from "nextra";
+import { MdxFile, Folder, PageMapItem } from "nextra";
 
 type Kind = "Meta" | "MdxPage" | "Folder";
 
@@ -23,7 +23,7 @@ interface Meta {
   kind: "Meta";
 }
 
-type Data = (Meta | MdxFile | Folder) & {
+type Data = (Meta | MdxFile | Folder | PageMapItem) & {
   kind: Kind;
 };
 

@@ -1,8 +1,6 @@
-import { MDXComponents } from "@fpkit/nextjs/libs/libs";
-import { useConfig } from "nextra-theme-blog";
+import { MDXComponents } from "@fpkit/nextra/libs/libs";
 
 export default {
-  // const { frontMatter } = useConfig();
   head: (
     <>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,9 +14,11 @@ export default {
     </h1>
   ),
   brand: {
-    logo: <span>FPKIT NEXTRA</span>,
+    logo: <span>FPKIT NEXTRA (DEV)</span>,
     url: "/",
   },
+  siteDescription: "A simple easy to use nextra theme",
+  siteName: "FPKIT NEXTRA",
   banner: {
     title: "FPKIT NEXTRA",
     description: "A simple easy to use nextra theme",
@@ -35,9 +35,6 @@ export default {
   footer: {
     text: "Nextra Docs Template",
   },
-  components: {
-    h2: ({ children }) => <h2>{children}</h2>,
-    ...MDXComponents,
-  },
   darkMode: true,
+  components: MDXComponents,
 };

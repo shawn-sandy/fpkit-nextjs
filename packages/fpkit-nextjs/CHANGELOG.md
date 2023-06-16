@@ -3,6 +3,81 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.1.6...v0.2.0) (2023-04-16)
+
+### Build System
+
+- 📛 rename fpkit/nextjs to fpkit/nextra ([a6431be](https://github.com/shawn-sandy/fpkit-nextjs/commit/a6431be600bada23557a94b8c1dda926a036ca0c))
+
+### Features
+
+- 🌟 conditionally hide toc if items <=1 ([a19ed68](https://github.com/shawn-sandy/fpkit-nextjs/commit/a19ed686481d5ab7beea54bfa9de1b601e2bcbcd))
+- 🚧 add/update keys for Navlist and Toc ([b6b65aa](https://github.com/shawn-sandy/fpkit-nextjs/commit/b6b65aaef1b947bf7c3013f8b1df25c3c64a9990))
+
+### BREAKING CHANGES
+
+- 🧨 fpkit/nextjs is now fpkit/nextra
+
+## [0.1.6](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.1.5...v0.1.6) (2023-04-15)
+
+### Features
+
+- 🏗️ add basic toc component ([1915195](https://github.com/shawn-sandy/fpkit-nextjs/commit/1915195a6997072ba961e35b83d9ba9de49ad548))
+- 🤩 add <head/> call to the theme.tsx ([6158340](https://github.com/shawn-sandy/fpkit-nextjs/commit/61583409db17e5cf2755203ca69d1669151099c3))
+- 🤩 add a toc component ([5eee3f5](https://github.com/shawn-sandy/fpkit-nextjs/commit/5eee3f5e06de105627f5f2c31d5366698ba766b7))
+- add table w/div [data-scroll] wrapper to mdx components ([2010320](https://github.com/shawn-sandy/fpkit-nextjs/commit/201032069a67c3184b37a15c0c7c1e5a98877957))
+
+## [0.1.5](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.1.4...v0.1.5) (2023-04-10)
+
+**Note:** Version bump only for package @fpkit/nextjs
+
+## [0.1.4](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.1.3...v0.1.4) (2023-04-08)
+
+### Features
+
+- 🏗️ resolve the issue with the nav list types ([2bfb59a](https://github.com/shawn-sandy/fpkit-nextjs/commit/2bfb59ad99ec9cda78b9949e269a6694ab979f44))
+- 🤩 add mdx-components to theme-config ([2ee1cc7](https://github.com/shawn-sandy/fpkit-nextjs/commit/2ee1cc79a0ef53975c170be406e9eb47871292ee))
+
+## [0.1.3](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.1.2...v0.1.3) (2023-04-05)
+
+### Bug Fixes
+
+- 🚒 update and remove files/package to resolve build issues ([322db1d](https://github.com/shawn-sandy/fpkit-nextjs/commit/322db1dabdaeb93e35a8f835897b877766e12a60))
+
+### Features
+
+- 🌟 add navlist feature ([e630222](https://github.com/shawn-sandy/fpkit-nextjs/commit/e630222ee647ab14f360dbd29557a08181a3bfcf))
+- 🌟 feat page type filter ([4c1c138](https://github.com/shawn-sandy/fpkit-nextjs/commit/4c1c138da2ad8f06bb261bf28db081f55f84c58f))
+- 🤩 add sort method to page filter ([b42acae](https://github.com/shawn-sandy/fpkit-nextjs/commit/b42acae6250844f8b5c75c67da4ea910c956816d))
+
+## [0.1.2](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.1.1...v0.1.2) (2023-04-01)
+
+### Features
+
+- 🚗 add nav list to index.ts exports ([a7a271e](https://github.com/shawn-sandy/fpkit-nextjs/commit/a7a271e0373ea87e874f05d2c211c63b9dfd845a))
+- add nav-brand story/unit test ([5d24982](https://github.com/shawn-sandy/fpkit-nextjs/commit/5d24982e72634edfbb4b9e06c3e87c8b240c284f))
+- add nav-list component ([98ae3ad](https://github.com/shawn-sandy/fpkit-nextjs/commit/98ae3ad13e669f7e6b73c01f8714369eae16295a))
+
+## [0.1.1](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.1.0...v0.1.1) (2023-04-01)
+
+**Note:** Version bump only for package @fpkit/nextjs
+
+# [0.1.0](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.0.15...v0.1.0) (2023-04-01)
+
+**Note:** Version bump only for package @fpkit/nextjs
+
+## [0.0.15](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.0.14...v0.0.15) (2023-04-01)
+
+**Note:** Version bump only for package @fpkit/nextjs
+
+## [0.0.14](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.0.13...v0.0.14) (2023-04-01)
+
+### Features
+
+- 🌟 add conditional rendering for post list ([ebb6388](https://github.com/shawn-sandy/fpkit-nextjs/commit/ebb638867937d59e9c0ea96480ae7fd83b5fa25e))
+- 🏗️ set article padding to 1rem ([896688a](https://github.com/shawn-sandy/fpkit-nextjs/commit/896688a2d3e426adc35e8b67476faf814c0b75af))
+- 🔥 remove the navbar component ([628bb2f](https://github.com/shawn-sandy/fpkit-nextjs/commit/628bb2f1cdfd88ee923a6ce9e5eb425e84217e68))
+
 ## [0.0.13](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.0.12...v0.0.13) (2023-03-31)
 
 **Note:** Version bump only for package @fpkit/nextjs

@@ -1,6 +1,3 @@
-"use client";
-import Image from "next/image";
-import styles from "./page.module.css";
 import PageHeader from "@/components/page-header";
 import { Text } from "@fpkit/react";
 // import { usePopover } from "@fpkit/";

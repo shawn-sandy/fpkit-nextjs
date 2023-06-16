@@ -16,7 +16,7 @@ export const Navbar = ({ styles, children }: NavbarProps) => {
         ...styles,
       }}
     >
-      {children}
+      <>{children}</>
     </Nav>
   );
 };

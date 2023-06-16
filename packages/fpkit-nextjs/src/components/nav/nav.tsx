@@ -32,6 +32,7 @@ export const NavItem = ({
 
 export type NavProps = {
   children?: React.ReactNode;
+  styles?: {};
 };
 
 /**
@@ -39,10 +40,10 @@ export type NavProps = {
  * @param param0
  * @returns
  */
-export const Nav = ({ children, ...props }: NavProps) => {
+export const Nav = ({ children, styles, ...props }: NavProps) => {
   return (
     <>
-      <Tag as="nav" {...props}>
+      <Tag as="nav" style={styles} {...props}>
         {children}
       </Tag>
     </>

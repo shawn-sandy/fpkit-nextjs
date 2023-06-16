@@ -1,8 +1,7 @@
 import "@shawnsandy/first-paint/dist/css/libs/all.min.css";
 import "./globals.css";
 import { Inter } from "next/font/google";
-import PageHeader from "@/components/page-header";
-import { Text } from "@fpkit/react";
+import Navbar from "@/components/navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +17,28 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Navbar
+          styles={{
+            backgroundColor: "#fff",
+            "--nav-mx": 0,
+            paddingInline: "1rem",
+          }}
+        >
+          <div>
+            <a href="/">Home</a>
+          </div>
+          <ul>
+            <li>
+              <a href="/blog">Blog</a>
+            </li>
+            <li>
+              <a href="/about">About</a>
+            </li>
+          </ul>
+        </Navbar>
+        {children}
+      </body>
     </html>
   );
 }

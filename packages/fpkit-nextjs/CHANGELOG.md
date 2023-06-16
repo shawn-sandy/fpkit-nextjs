@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.1](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.2.0...v0.2.1) (2023-06-16)
+
+### Bug Fixes
+
+- 🚑 fix failing axe test on Toc components ([99bd562](https://github.com/shawn-sandy/fpkit-nextjs/commit/99bd5627872434b0c82ddbb03a8e7427ca2f2c92))
+
+### Features
+
+- 🏗️ add nextjs tp apps ([34734e8](https://github.com/shawn-sandy/fpkit-nextjs/commit/34734e807b56d8e0b3bb3a2542d06df021803c4e))
+- 🏗️ update the article list component ([1f842eb](https://github.com/shawn-sandy/fpkit-nextjs/commit/1f842eb68fa8f294ceb0f8dbd2a568737f22ea0d))
+- 🤩 add page list component ([fbf3ced](https://github.com/shawn-sandy/fpkit-nextjs/commit/fbf3cedd9c746ecda50e46880f02ecc12c16d184))
+- add hr to pageList component ([9c2de5a](https://github.com/shawn-sandy/fpkit-nextjs/commit/9c2de5afd805159e3396b3bdb7096961e60ca259))
+- **next:** add navbar component to layout and create navbar component ([a57d197](https://github.com/shawn-sandy/fpkit-nextjs/commit/a57d197f31326ea24be6027d602b2c682d9e796f))
+- **next:** add Title component from @fpkit/react to Header component ([8982478](https://github.com/shawn-sandy/fpkit-nextjs/commit/8982478dde9f5526808ddcbbd168c0001937bd9a))
+- update next/link w/fpkit/link ([9bab134](https://github.com/shawn-sandy/fpkit-nextjs/commit/9bab1345a783378370d62782ed827a9f06c77042))
+
 # [0.2.0](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.1.6...v0.2.0) (2023-04-16)
 
 ### Build System

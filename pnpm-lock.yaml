@@ -167,7 +167,7 @@ importers:
   apps/next:
     dependencies:
       '@fpkit/nextra':
-        specifier: workspace:*
+        specifier: workspace:^
         version: link:../../packages/fpkit-nextjs
       '@fpkit/react':
         specifier: ^0.2.79

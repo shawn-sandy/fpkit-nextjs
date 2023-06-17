@@ -10,7 +10,7 @@ export const Navbar = ({ styles, children }: NavbarProps) => {
   return (
     <Nav
       styles={{
-        backgroundColor: "#fff",
+        "--nav-bg": "#fff",
         "--nav-mx": 0,
         paddingInline: "1rem",
         ...styles,

@@ -1,9 +1,16 @@
-import { Footer } from "./landmarks";
+import { Footer, Section } from "./landmarks";
 
-export const ThemeFooter = () => {
+export type ThemeFooterProps = {
+  children?: React.ReactNode;
+};
+
+export const ThemeFooter = ({ children }: ThemeFooterProps) => {
   return (
     <Footer>
-      <p>&copy; {new Date().getFullYear()}</p>
+      {!!children && <Section>{children}</Section>}
+      <div>
+        <p>&copy; {new Date().getFullYear()}</p>
+      </div>
     </Footer>
   );
 };

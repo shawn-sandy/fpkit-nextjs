@@ -18,13 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar
-          styles={{
-            backgroundColor: "#fff",
-            "--nav-mx": 0,
-            paddingInline: "1rem",
-          }}
-        >
+        <Navbar>
           <div>
             <a href="/">Home</a>
           </div>

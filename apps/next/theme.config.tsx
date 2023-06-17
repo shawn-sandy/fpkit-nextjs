@@ -1,4 +1,4 @@
-import { MDXComponents } from "@fpkit/nextra/libs/libs";
+import { MDXComponents } from "@fpkit/nextjs/libs/libs";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {

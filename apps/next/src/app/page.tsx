@@ -1,7 +1,6 @@
 import PageHeader from "@/components/page-header";
 import { Text } from "@fpkit/react";
-// import { usePopover } from "@fpkit/";
-import { Main, Section } from "@fpkit/nextra";
+import { Main, Section } from "@fpkit/nextjs";
 
 export default function Home() {
   return (

@@ -1,10 +1,11 @@
-import { Main, Section } from "@fpkit/nextra";
+import { Main, Section } from "@fpkit/nextjs";
+import { Title } from "@fpkit/react";
 
 export default function Page() {
   return (
     <Main>
       <Section>
-        <h2>Hello, Dashboard Page!</h2>
+        <Title elm="h2">Hello, Dashboard Page!</Title>
       </Section>
     </Main>
   );

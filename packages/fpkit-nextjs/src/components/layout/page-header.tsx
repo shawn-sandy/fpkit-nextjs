@@ -47,7 +47,7 @@ export function DefaultHeader({
   );
 }
 
-export const ThemeHeader = ({
+export const PageHeader = ({
   title,
   link,
   linkLabel,
@@ -72,5 +72,5 @@ export const ThemeHeader = ({
     </HeaderBase>
   );
 };
-export default ThemeHeader;
-ThemeHeader.displayName = "Header";
+export default PageHeader;
+PageHeader.displayName = "Header";

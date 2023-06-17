@@ -8,7 +8,7 @@ export type MainProps = {
   classes?: string;
 };
 
-export const ThemeMain = ({
+export const PageMain = ({
   children,
   sideBar,
   mainStyles,
@@ -24,5 +24,5 @@ export const ThemeMain = ({
   );
 };
 
-export default ThemeMain;
-ThemeMain.displayName = "Main";
+export default PageMain;
+PageMain.displayName = "Main";

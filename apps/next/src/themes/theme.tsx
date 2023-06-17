@@ -15,7 +15,7 @@ import {
   FilterMdxPages,
   FilterPageType,
   Toc,
-} from "@fpkit/nextra";
+} from "@fpkit/nextjs";
 
 import { MDXProvider } from "nextra/mdx";
 import "@shawnsandy/first-paint/dist/css/libs/all.min.css";

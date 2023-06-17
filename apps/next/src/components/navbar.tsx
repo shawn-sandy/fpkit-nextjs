@@ -1,5 +1,5 @@
 import React from "react";
-import { Nav } from "@fpkit/nextra";
+import { Nav } from "@fpkit/nextjs";
 
 export type NavbarProps = {
   children?: React.ReactNode;

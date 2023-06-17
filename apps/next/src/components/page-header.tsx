@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, Section } from "@fpkit/nextra";
+import { Header, Section } from "@fpkit/nextjs";
 import { Title } from "@fpkit/react";
 
 export interface PageHeaderProps {

@@ -23,14 +23,7 @@ export function DefaultHeader({
 }: HeaderProps) {
   return (
     <Section>
-      <Title
-        elm="h2"
-        styles={{
-          "--fs": "var(--h1)",
-        }}
-      >
-        {title}
-      </Title>
+      <Title elm="h2">{title}</Title>
       {description && <Text elm="p">{description}</Text>}
       <Text elm="p">
         <Tag

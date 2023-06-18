@@ -11,8 +11,8 @@ export * from './components/posts/post-list';
 export * from './components/posts/page-list';
 export * from './components/toc/toc';
 
-export { usePageOpts } from './hooks/useOpts';
-export { useConfig } from './hooks/useConfig';
-
 export * from './libs/components'
 export * from './libs/filter-mdx-pages'
+
+export { usePageOpts } from './hooks/useOpts';
+export { useConfig } from './hooks/useConfig';

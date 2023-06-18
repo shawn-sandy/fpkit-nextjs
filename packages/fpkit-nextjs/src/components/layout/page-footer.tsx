@@ -14,11 +14,10 @@ export const PageFooter = ({
   return (
     <Footer>
       {!!children && <Section>{children}</Section>}
-      <div>
-        <p>
-          {copyInfo} &copy; {orgName} {new Date().getFullYear()}
-        </p>
-      </div>
+
+      <p>
+        {copyInfo} &copy; {orgName} {new Date().getFullYear()}
+      </p>
     </Footer>
   );
 };

@@ -4,18 +4,13 @@ import { Section, Main, Article, Aside } from "./landmarks";
 export type MainProps = {
   children: React.ReactNode;
   sideBar?: React.ReactNode;
-  mainStyles?: {};
+  styles?: {};
   classes?: string;
 };
 
-export const PageMain = ({
-  children,
-  sideBar,
-  mainStyles,
-  classes,
-}: MainProps) => {
+export const PageMain = ({ children, sideBar, styles, classes }: MainProps) => {
   return (
-    <Main>
+    <Main styles={styles}>
       <Section data-content>
         <Article>{children}</Article>
         <Aside>{sideBar || "Sidebar"}</Aside>

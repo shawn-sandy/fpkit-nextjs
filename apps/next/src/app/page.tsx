@@ -8,7 +8,7 @@ export default function Home() {
       <PageHeader title="Header Section" data-style="large">
         <Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</Text>
       </PageHeader>
-      <Main>
+      <Main styles={{ minHeight: "50vh" }}>
         <Section>
           <Text>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam

@@ -10,7 +10,7 @@ export default function Page() {
       <Main>
         <Section>
           <Article>
-            <Title elm="h2">We are a great team of 10X developers!</Title>
+            <Title elm="h3">We are a great team of 10X developers!</Title>
             <Text>
               We are a team of passionate developers who love to create amazing
               software. Our mission is to build innovative solutions that help

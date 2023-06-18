@@ -10,9 +10,9 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@fpkit/nextra": "^0.2.1",
-    "@fpkit/react": "^0.2.79",
-    "@shawnsandy/first-paint": "^2.17.56",
+    "@fpkit/nextjs": "workspace:*",
+    "@fpkit/react": "^0.2.82",
+    "@shawnsandy/first-paint": "^2.17.59",
     "@types/node": "20.3.0",
     "@types/react": "18.2.11",
     "@types/react-dom": "18.2.4",

@@ -1,5 +1,5 @@
 import React from "react";
-import { Nav } from "@fpkit/nextra";
+import { Nav } from "@fpkit/nextjs";
 
 export type NavbarProps = {
   children?: React.ReactNode;
@@ -10,7 +10,7 @@ export const Navbar = ({ styles, children }: NavbarProps) => {
   return (
     <Nav
       styles={{
-        backgroundColor: "#fff",
+        "--nav-bg": "#fff",
         "--nav-mx": 0,
         paddingInline: "1rem",
         ...styles,

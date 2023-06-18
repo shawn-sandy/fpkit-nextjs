@@ -1,8 +1,8 @@
 {
-  "name": "@fpkit/nextra",
+  "name": "@fpkit/nextjs",
   "description": "Nextjs components",
   "private": false,
-  "version": "0.2.1",
+  "version": "0.2.2",
   "type": "module",
   "source": "src/index.ts",
   "main": "./libs/index.cjs",

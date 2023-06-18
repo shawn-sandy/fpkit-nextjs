@@ -23,14 +23,7 @@ export function DefaultHeader({
 }: HeaderProps) {
   return (
     <Section>
-      <Title
-        elm="h2"
-        styles={{
-          "--fs": "var(--h1)",
-        }}
-      >
-        {title}
-      </Title>
+      <Title elm="h2">{title}</Title>
       {description && <Text elm="p">{description}</Text>}
       <Text elm="p">
         <Tag
@@ -47,7 +40,7 @@ export function DefaultHeader({
   );
 }
 
-export const ThemeHeader = ({
+export const PageHeader = ({
   title,
   link,
   linkLabel,
@@ -72,5 +65,5 @@ export const ThemeHeader = ({
     </HeaderBase>
   );
 };
-export default ThemeHeader;
-ThemeHeader.displayName = "Header";
+export default PageHeader;
+PageHeader.displayName = "Header";

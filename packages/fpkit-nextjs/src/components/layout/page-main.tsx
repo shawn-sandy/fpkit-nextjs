@@ -4,18 +4,13 @@ import { Section, Main, Article, Aside } from "./landmarks";
 export type MainProps = {
   children: React.ReactNode;
   sideBar?: React.ReactNode;
-  mainStyles?: {};
+  styles?: {};
   classes?: string;
 };
 
-export const ThemeMain = ({
-  children,
-  sideBar,
-  mainStyles,
-  classes,
-}: MainProps) => {
+export const PageMain = ({ children, sideBar, styles, classes }: MainProps) => {
   return (
-    <Main>
+    <Main styles={styles}>
       <Section data-content>
         <Article>{children}</Article>
         <Aside>{sideBar || "Sidebar"}</Aside>
@@ -24,5 +19,5 @@ export const ThemeMain = ({
   );
 };
 
-export default ThemeMain;
-ThemeMain.displayName = "Main";
+export default PageMain;
+PageMain.displayName = "Main";

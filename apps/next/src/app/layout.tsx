@@ -2,6 +2,7 @@ import "@shawnsandy/first-paint/dist/css/libs/all.min.css";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/navbar";
+import { PageFooter } from "@fpkit/nextjs";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,13 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar
-          styles={{
-            backgroundColor: "#fff",
-            "--nav-mx": 0,
-            paddingInline: "1rem",
-          }}
-        >
+        <Navbar>
           <div>
             <a href="/">Home</a>
           </div>
@@ -38,6 +33,12 @@ export default function RootLayout({
           </ul>
         </Navbar>
         {children}
+        <PageFooter>
+          <p>
+            Thank you for visiting our website! If you have any questions or
+            comments, please don&apos;t hesitate to contact us.
+          </p>
+        </PageFooter>
       </body>
     </html>
   );

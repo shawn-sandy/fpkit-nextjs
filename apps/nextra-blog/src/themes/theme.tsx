@@ -1,13 +1,11 @@
 import type { NextraThemeLayoutProps } from "nextra";
 import Head from "next/head";
-import { useConfig } from "nextra-theme-docs";
 import React from "react";
-import { getPagesUnderRoute, getAllPages } from "nextra/context";
 
 import {
-  ThemeMain,
-  ThemeHeader,
-  ThemeFooter,
+  PageMain,
+  PageHeader,
+  PageFooter,
   PostsList,
   NavList,
   Nav,
@@ -15,7 +13,7 @@ import {
   FilterMdxPages,
   FilterPageType,
   Toc,
-} from "@fpkit/nextra";
+} from "@fpkit/nextjs";
 
 import { MDXProvider } from "nextra/mdx";
 import "@shawnsandy/first-paint/dist/css/libs/all.min.css";
@@ -55,14 +53,14 @@ export default function Layout({
         <NavList pages={pages} />
       </Nav>
 
-      <ThemeHeader
+      <PageHeader
         title={banner.title}
         link={banner.link}
         linkLabel={banner.linkLabel}
         description={banner.description}
       />
 
-      <ThemeMain sideBar={<SideBar />}>
+      <PageMain sideBar={<SideBar />}>
         {pageOpts.route === "/" && latestPosts.length > 0 ? (
           <PostsList postList={latestPosts} showDescription />
         ) : (
@@ -76,9 +74,9 @@ export default function Layout({
             {children}
           </MDXProvider>
         )}
-      </ThemeMain>
+      </PageMain>
 
-      <ThemeFooter />
+      <PageFooter />
     </>
   );
 }

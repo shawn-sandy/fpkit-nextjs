@@ -1,5 +1,5 @@
 import type { NextraThemeLayoutProps } from "nextra";
-import useBlogContext from "nextra-theme-blog";
+// import useBlogContext from "nextra-theme-blog";
 import React from "react";
 
 import {
@@ -10,10 +10,10 @@ import {
   NavList,
   Nav,
   NavBrand,
-} from "@fpkit/nextra";
+} from "@fpkit/nextjs";
 
-import { usePageOpts, useConfig } from "@fpkit/nextra/libs/hooks";
-import { FilterMdxPages } from "@fpkit/nextra/libs/libs";
+import { usePageOpts, useConfig } from "@fpkit/nextjs/libs/hooks";
+import { FilterMdxPages } from "@fpkit/nextjs/libs/libs";
 import { MDXProvider } from "nextra/mdx";
 import "@shawnsandy/first-paint/dist/css/libs/all.min.css";
 
@@ -27,7 +27,6 @@ export default function Layout({
     options: { pageOpts },
   });
 
-  
   const banner = themeConfig.banner;
 
   const latest = FilterMdxPages(pageMap);

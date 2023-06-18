@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.2](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.2.1...v0.2.2) (2023-06-17)
+
+### Features
+
+- **components:** add support for a configurable background color to Navbar component ([3f9d6ca](https://github.com/shawn-sandy/fpkit-nextjs/commit/3f9d6ca58fa8e5a61a7d3f85a1a3cddc6c879848))
+
 ## [0.2.1](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.2.0...v0.2.1) (2023-06-16)
 
 ### Bug Fixes

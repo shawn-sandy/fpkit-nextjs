@@ -2,7 +2,7 @@ import "@shawnsandy/first-paint/dist/css/libs/all.min.css";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/navbar";
-import { PageFooter, Main } from "@fpkit/nextjs";
+import { PageFooter } from "@fpkit/nextjs";
 
 const inter = Inter({ subsets: ["latin"] });
 

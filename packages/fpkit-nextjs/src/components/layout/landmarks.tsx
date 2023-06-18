@@ -1,7 +1,3 @@
-/**
- * @fileoverview Landmarks components
- */
-
 import { Tag } from "@fpkit/react";
 import { LayoutProps } from "nextra-theme-blog";
 

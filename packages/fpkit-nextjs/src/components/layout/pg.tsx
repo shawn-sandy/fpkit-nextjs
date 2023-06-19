@@ -17,7 +17,7 @@ export type PageProps = {
   author?: string;
 };
 
-export const Pg = ({ children }: Partial<PageProps>) => {
+export const PG = ({ children }: Partial<PageProps>) => {
   return <>{children}</>;
 };
 
@@ -35,6 +35,6 @@ const PageHeader = ({
   );
 };
 
-Pg.Header = PageHeader;
+PG.Header = PageHeader;
 
-export default Pg;
+export default PG;

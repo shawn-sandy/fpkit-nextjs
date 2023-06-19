@@ -1,12 +1,12 @@
-import { Article, Main, Section, Pg } from "@fpkit/nextjs";
+import { Article, Main, Section, PG } from "@fpkit/nextjs";
 import { Title, Text } from "@fpkit/react";
 import PageHeader from "@/components/page-header";
 export default function Page() {
   return (
     <>
-      <Pg.Header title="About Page">
+      <PG.Header title="About Page">
         <Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</Text>
-      </Pg.Header>
+      </PG.Header>
       <Main>
         <Section>
           <Article>

@@ -5,7 +5,7 @@ export default defineConfig({
   test: {
     globals: true,
     environment: "jsdom", // add jsdom
-    setupFiles: "./src/test/setup.ts", // setup includes
+    setupFiles: "/src/test/setup.ts", // setup includes
     coverage: {
       // config coverage
       reporter: ["text", "html"], // generate coverage reports

@@ -6,14 +6,9 @@ export interface LandmarkProps {
   styles?: {};
 }
 
-export const Header = ({
-  children,
-  ...props
-}: {
-  children: React.ReactNode;
-}) => {
+export const Header = ({ styles, children, ...props }: LandmarkProps) => {
   return (
-    <Tag as="header" {...props}>
+    <Tag as="header" styles={styles} {...props}>
       <Tag as="section">{children}</Tag>
     </Tag>
   );

@@ -41,7 +41,6 @@ const HeaderSection = ({
     </Header>
   );
 };
-
 /**
  * Renders the main section of the page
  * @param {React.ReactNode} children - The children to render inside the main section
@@ -112,6 +111,7 @@ PG.Main = MainSection;
 /**
  * Renders the footer section of the page
  * @param {ThemeFooterProps} props - The props object containing the copyInfo, orgName, styles, and children
+ * @example <Page.Footer copyInfo="© 2021" orgName="My Org" />
  * @returns {JSX.Element} - The rendered footer section component
  *
  */

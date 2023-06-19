@@ -1,3 +1,4 @@
+import React from "react";
 import { Footer, Section } from "./landmarks";
 
 export type ThemeFooterProps = {

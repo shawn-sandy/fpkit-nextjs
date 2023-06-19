@@ -1,3 +1,4 @@
+import React from "react";
 import { Tag } from "@fpkit/react";
 import { LayoutProps } from "nextra-theme-blog";
 

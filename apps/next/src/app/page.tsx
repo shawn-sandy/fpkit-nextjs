@@ -1,13 +1,13 @@
 import PageHeader from "@/components/page-header";
 import { Text } from "@fpkit/react";
-import { Main, Section, Pg } from "@fpkit/nextjs";
+import { Main, Section, PG } from "@fpkit/nextjs";
 
 export default function Home() {
   return (
-    <Pg>
-      <Pg.Header title="Header Section" data-style="large">
+    <PG>
+      <PG.Header title="Header Section" data-style="large">
         <Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</Text>
-      </Pg.Header>
+      </PG.Header>
       <Main styles={{ minHeight: "50vh" }}>
         <Section>
           <Text>
@@ -16,6 +16,6 @@ export default function Home() {
           </Text>
         </Section>
       </Main>
-    </Pg>
+    </PG>
   );
 }

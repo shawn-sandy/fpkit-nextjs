@@ -5,7 +5,7 @@ export * from './components/nav/nav-list';
 export * from './components/nav/nav-brand';
 export * from './components/layout/page-main';
 export * from './components/layout/page-header';
-export * from './components/layout/page';
+export * from './components/layout/pg';
 export * from './components/layout/page-footer';
 export * from './components/layout/landmarks';
 export * from './components/posts/post-list';

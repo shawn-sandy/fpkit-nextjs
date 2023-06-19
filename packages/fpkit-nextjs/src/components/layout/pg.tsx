@@ -1,9 +1,7 @@
-/**
- * create a componud page layout
- */
 import React from "react";
 import { Title } from "@fpkit/react";
 import { Header, Main } from "./landmarks";
+import { PageFooter, ThemeFooterProps } from "./page-footer";
 
 export type PageProps = {
   children: React.ReactNode;
@@ -62,6 +60,26 @@ const MainSection = ({
   );
 };
 
+/**
+ * Renders the footer section of the page
+ * @param {ThemeFooterProps} props - The props object containing the copyInfo, orgName, styles, and children
+ * @returns {JSX.Element} - The rendered footer section component
+ */
+const FooterSection = ({
+  copyInfo,
+  orgName,
+  styles,
+  children,
+  ...props
+}: ThemeFooterProps): JSX.Element => {
+  return (
+    <PageFooter styles={styles} {...props}>
+      {children}
+    </PageFooter>
+  );
+};
+
 PG.Header = HeaderSection;
 PG.Main = MainSection;
+PG.Footer = FooterSection;
 export default PG;

@@ -1,6 +1,7 @@
 import React from "react";
 import { Title } from "@fpkit/react";
 import { Header, Main } from "./landmarks";
+import Nav from "../nav/nav";
 import { PageFooter, ThemeFooterProps } from "./page-footer";
 
 export type PageProps = {
@@ -79,6 +80,18 @@ const FooterSection = ({
   );
 };
 
+const NavSection = ({
+  children,
+  styles,
+  ...props
+}: Partial<PageProps>): JSX.Element => {
+  return (
+    <Nav styles={styles} {...props}>
+      {children}
+    </Nav>
+  );
+};
+
 /**
  * Renders the header section of the page
  * @param {string} title - The title of the header
@@ -103,4 +116,20 @@ PG.Main = MainSection;
  *
  */
 PG.Footer = FooterSection;
+/**
+ * Renders the nav section of the page
+ * @param {React.ReactNode} children - The children to render inside the nav section
+ * @param {object} styles - The styles to apply to the nav section
+ * @param {PageProps} props - The page props object
+ * @returns {JSX.Element} - The rendered nav section component
+ * @example
+ * <Page.Nav>
+ *  <Nav />
+ * </Page.Nav>
+ * @example
+ * <Page.Nav styles={{ backgroundColor: "red" }}>
+ * <Nav />
+ * </Page.Nav>
+ */
+PG.Nav = NavSection;
 export default PG;

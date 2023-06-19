@@ -79,7 +79,28 @@ const FooterSection = ({
   );
 };
 
+/**
+ * Renders the header section of the page
+ * @param {string} title - The title of the header
+ * @param {object} styles - The styles to apply to the header
+ * @param {React.ReactNode} children - The children to render inside the header
+ * @param {PageProps} props - The page props object
+ * @returns {JSX.Element} - The rendered header section component
+ */
 PG.Header = HeaderSection;
+/**
+ * Renders the main section of the page
+ * @param {React.ReactNode} children - The children to render inside the main section
+ * @param {object} styles - The styles to apply to the main section
+ * @param {PageProps} props - The page props object
+ * @returns {JSX.Element} - The rendered main section component
+ */
 PG.Main = MainSection;
+/**
+ * Renders the footer section of the page
+ * @param {ThemeFooterProps} props - The props object containing the copyInfo, orgName, styles, and children
+ * @returns {JSX.Element} - The rendered footer section component
+ *
+ */
 PG.Footer = FooterSection;
 export default PG;

@@ -32,7 +32,7 @@ export default function RootLayout({
           </ul>
         </PG.Nav>
         {children}
-        <PG.Footer orgName="Some name">
+        <PG.Footer orgName="Org Name">
           <p>
             Thank you for visiting our website! If you have any questions or
             comments, please don&apos;t hesitate to contact us.

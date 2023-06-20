@@ -73,7 +73,12 @@ const FooterSection = ({
   ...props
 }: ThemeFooterProps): JSX.Element => {
   return (
-    <PageFooter styles={styles} {...props}>
+    <PageFooter
+      styles={styles}
+      orgName={orgName}
+      copyInfo={copyInfo}
+      {...props}
+    >
       {children}
     </PageFooter>
   );

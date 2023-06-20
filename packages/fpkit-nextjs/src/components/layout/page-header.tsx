@@ -23,8 +23,14 @@ export function DefaultHeader({
 }: HeaderProps) {
   return (
     <Section>
-      <Title elm="h2">{title}</Title>
-      {description && <Text elm="p">{description}</Text>}
+      <Title elm="h2">
+        <>{title}</>
+      </Title>
+      {description && (
+        <Text elm="p">
+          <>{description}</>
+        </Text>
+      )}
       <Text elm="p">
         <Tag
           as="a"
@@ -33,7 +39,7 @@ export function DefaultHeader({
           data-variant="primary"
           data-style="pill"
         >
-          {linkLabel || "Get Started"}
+          <>{linkLabel || "Get Started"}</>
         </Tag>
       </Text>
     </Section>

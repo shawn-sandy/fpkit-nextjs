@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.4](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.2.3...v0.2.4) (2023-06-20)
+
+### Features
+
+- **fpkit-nextjs:** add filter-mdx-pages and components exports to libs/index.ts ([3787eaf](https://github.com/shawn-sandy/fpkit-nextjs/commit/3787eafa89a8d912d283f90397a7901ac8146b5f))
+- **fpkit-nextjs:** add hooks folder with usePageOpts and useConfig hooks ([d1664ab](https://github.com/shawn-sandy/fpkit-nextjs/commit/d1664ab89a389733f09fb458b6b91599950431eb))
+
 ## [0.2.3](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.2.2...v0.2.3) (2023-06-19)
 
 ### Features

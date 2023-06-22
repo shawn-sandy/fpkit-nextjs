@@ -28,7 +28,7 @@ export const PG = ({ children }: Partial<PageProps>) => {
  * @param {PageProps} props - The page props object
  * @returns {JSX.Element} - The rendered page header component
  */
-const HeaderSection = ({
+export const HeaderSection = ({
   title = "Header Title",
   styles,
   children,
@@ -48,7 +48,7 @@ const HeaderSection = ({
  * @param {PageProps} props - The page props object
  * @returns {JSX.Element} - The rendered main section component
  */
-const MainSection = ({
+export const MainSection = ({
   children,
   styles,
   ...props
@@ -65,7 +65,7 @@ const MainSection = ({
  * @param {ThemeFooterProps} props - The props object containing the copyInfo, orgName, styles, and children
  * @returns {JSX.Element} - The rendered footer section component
  */
-const FooterSection = ({
+export const FooterSection = ({
   copyInfo,
   orgName,
   styles,
@@ -84,7 +84,7 @@ const FooterSection = ({
   );
 };
 
-const NavSection = ({
+export const NavSection = ({
   children,
   styles,
   ...props

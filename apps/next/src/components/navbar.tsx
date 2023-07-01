@@ -1,4 +1,5 @@
 import React from "react";
+import { PG } from "@fpkit/nextjs";
 import { Nav } from "@fpkit/nextjs";
 
 export type NavbarProps = {
@@ -8,16 +9,20 @@ export type NavbarProps = {
 
 export const Navbar = ({ styles, children }: NavbarProps) => {
   return (
-    <Nav
-      styles={{
-        "--nav-bg": "#fff",
-        "--nav-mx": 0,
-        paddingInline: "1rem",
-        ...styles,
-      }}
-    >
-      <>{children}</>
-    </Nav>
+    <PG.Nav styles={styles}>
+      <div>
+        <a href="/">Home</a>
+      </div>
+      <ul>
+        <li>
+          <a href="/blog">Blog</a>
+        </li>
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <>{children}</>
+      </ul>
+    </PG.Nav>
   );
 };
 

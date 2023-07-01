@@ -1,6 +1,6 @@
 import React from "react";
 import { Title } from "@fpkit/react";
-import { Header, Main } from "./landmarks";
+import { Header, Main, Section } from "./landmarks";
 import Nav from "../nav/nav";
 import { PageFooter, ThemeFooterProps } from "./page-footer";
 
@@ -55,7 +55,7 @@ export const MainSection = ({
 }: Partial<PageProps>): JSX.Element => {
   return (
     <Main styles={styles} {...props}>
-      {children}
+      <Section>{children}</Section>
     </Main>
   );
 };

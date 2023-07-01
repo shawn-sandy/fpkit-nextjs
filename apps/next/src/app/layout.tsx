@@ -2,6 +2,7 @@ import "@shawnsandy/first-paint/dist/css/libs/all.min.css";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import { PG } from "@fpkit/nextjs";
+import Nav from "@/components/navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,19 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <PG.Nav>
-          <div>
-            <a href="/">Home</a>
-          </div>
-          <ul>
-            <li>
-              <a href="/blog">Blog</a>
-            </li>
-            <li>
-              <a href="/about">About</a>
-            </li>
-          </ul>
-        </PG.Nav>
+        <Nav />
         {children}
         <PG.Footer orgName="Org Name">
           <p>

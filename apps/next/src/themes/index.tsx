@@ -1,4 +1,3 @@
-import Link from "next/link";
 import type { NextraThemeLayoutProps } from "nextra";
 import "@shawnsandy/first-paint/dist/css/libs/all.min.css";
 import { PG } from "@fpkit/nextjs";
@@ -11,7 +10,7 @@ export default function Layout({ children, pageOpts }: NextraThemeLayoutProps) {
   return (
     <PG>
       <Nav />
-      <PG.Header title="Header Section" data-style="large">
+      <PG.Header title="Header Section">
         <Text>
           Blog - Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         </Text>

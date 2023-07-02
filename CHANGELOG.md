@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.4](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.2.3...v0.2.4) (2023-06-20)
+
+### Features
+
+- **fpkit-nextjs:** add filter-mdx-pages and components exports to libs/index.ts ([3787eaf](https://github.com/shawn-sandy/fpkit-nextjs/commit/3787eafa89a8d912d283f90397a7901ac8146b5f))
+- **fpkit-nextjs:** add hooks folder with usePageOpts and useConfig hooks ([d1664ab](https://github.com/shawn-sandy/fpkit-nextjs/commit/d1664ab89a389733f09fb458b6b91599950431eb))
+
+## [0.2.3](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.2.2...v0.2.3) (2023-06-19)
+
+### Features
+
+- **fpkit-nextjs:** add PG component to create a compound page layout with a header and children components ([b1d1248](https://github.com/shawn-sandy/fpkit-nextjs/commit/b1d124871432207359237bdffd38c890c8ae9639))
+- **fpkit-nextjs:** add React import to landmarks.tsx, page-footer.tsx, and pg.test.tsx to fix compilation errors ([f668ea1](https://github.com/shawn-sandy/fpkit-nextjs/commit/f668ea1a5a464319f2e002328db39e0f0692990a))
+- **layout.tsx:** import and use PG.Footer component from fpkit-nextjs package to render the page footer ([bd74577](https://github.com/shawn-sandy/fpkit-nextjs/commit/bd745774a2a0b4d0689ffe402f990a41b6161243))
+- **layout.tsx:** replace Navbar component with PG.Nav component from @fpkit/nextjs ([a381417](https://github.com/shawn-sandy/fpkit-nextjs/commit/a38141725d919a6106a8e6371ee67a20578acf2a))
+- **layout:** add MainSection component to render the main section of the page ([343906d](https://github.com/shawn-sandy/fpkit-nextjs/commit/343906df2d5ca9419c6d4daaddb9d26071227c7a))
+- **next:** add new components for page header, page main, and page footer to improve semantics and accessibility of the app layout ([65250f1](https://github.com/shawn-sandy/fpkit-nextjs/commit/65250f14df8399fd3799b1498e63853b0c1b820c))
+- **next:** add PageHeader component to About page for better user experience ([7d6362c](https://github.com/shawn-sandy/fpkit-nextjs/commit/7d6362cd1244eb3e1fe8f56f2570aa061fc1b3bc))
+- **next:** add Pg component to create a compound page layout ([5fef066](https://github.com/shawn-sandy/fpkit-nextjs/commit/5fef06662909d575be8729b53549fc8782aaa114))
+- **pg.tsx:** add NavSection component to render a navigation section in the page layout. ([d2c783b](https://github.com/shawn-sandy/fpkit-nextjs/commit/d2c783b7e382dca35e81fce91552c01381356fde))
+
 ## [0.2.2](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.2.1...v0.2.2) (2023-06-17)
 
 ### Features

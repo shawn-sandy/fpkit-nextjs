@@ -1,0 +1,27 @@
+{
+  "name": "@fpkit/nextjs-kit",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fpkit/nextjs": "workspace:^",
+    "@fpkit/react": "^0.3.1",
+    "@shawnsandy/first-paint": "^2.18.1",
+    "@types/node": "20.3.3",
+    "@types/react": "18.2.14",
+    "@types/react-dom": "18.2.6",
+    "eslint": "8.40.0",
+    "eslint-config-next": "13.4.1",
+    "next": "13.4.7",
+    "nextra": "^2.8.0",
+    "nextra-theme-docs": "^2.8.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "5.1.6"
+  }
+}

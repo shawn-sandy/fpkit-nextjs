@@ -1,4 +1,4 @@
-import { MDXComponents } from "@fpkit/nextra/libs/libs";
+import { MDXComponents } from "@fpkit/nextjs/libs/libs";
 
 export default {
   head: (

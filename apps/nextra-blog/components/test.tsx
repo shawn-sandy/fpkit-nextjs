@@ -1,7 +1,9 @@
 import { getPagesUnderRoute, getAllPages } from "nextra/context";
-import { PageList } from "@fpkit/nextra";
+import { PageList } from "@fpkit/nextjs";
 export const Test = ({ frontMatter }) => {
-  return <PageList data={getPagesUnderRoute("/posts")} />;
+  const pages = getAllPages();
+  console.log({ pages });
+  return <PageList data={getAllPages()} />;
 };
 
 export default Test;

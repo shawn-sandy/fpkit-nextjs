@@ -11,6 +11,19 @@ export type PostsListProps = {
   postList?: MdxFile[];
 };
 
+/*
+ * PostsList component
+ *
+ * Renders a list of posts.
+ *
+ * @param {PostsListProps} props - The props for the PostsList component.
+ * @param {boolean} [props.showDescription=false] - Show post description.
+ * @param {("h2" | "h3" | "h4" | "h5" | "h6")} [props.elm="h2"] - Heading element.
+ * @param {("article" | "li")} [props.as="article"] - Wrapper element.
+ * @param {MdxFile[]} [props.postList] - List of posts.
+ *
+ * @returns {JSX.Element} - The PostsList component.
+ */
 export const PostsList = ({
   showDescription = false,
   elm = "h2",

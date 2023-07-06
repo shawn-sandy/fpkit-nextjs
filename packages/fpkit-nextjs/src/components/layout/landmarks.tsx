@@ -73,9 +73,7 @@ export const Footer = ({ children, styles, ...props }: LandmarkProps) => {
 export const Aside = ({ children, styles, ...props }: LandmarkProps) => {
   return (
     <Tag as="aside" styles={styles} {...props}>
-      <Tag as="section">
-        <>{children}</>
-      </Tag>
+      <>{children}</>
     </Tag>
   );
 };

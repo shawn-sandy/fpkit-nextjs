@@ -23,7 +23,7 @@ export const PageMain = ({ children, sideBar, styles, classes }: MainProps) => {
     <Main styles={styles}>
       <Section data-content>
         <Article>{children}</Article>
-        <Aside>{sideBar || "Sidebar"}</Aside>
+        <Aside>{sideBar}</Aside>
       </Section>
     </Main>
   );

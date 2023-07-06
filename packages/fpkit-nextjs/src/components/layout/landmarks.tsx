@@ -20,7 +20,9 @@ export interface LandmarkProps {
 export const Header = ({ styles, children, ...props }: LandmarkProps) => {
   return (
     <Tag as="header" styles={styles} {...props}>
-      <Tag as="section">{children}</Tag>
+      <Tag as="section">
+        <>{children}</>
+      </Tag>
     </Tag>
   );
 };
@@ -39,7 +41,7 @@ export const Main = ({
 }: LandmarkProps) => {
   return (
     <Tag as="main" styles={styles} {...props}>
-      {children}
+      <>{children}</>
     </Tag>
   );
 };
@@ -54,7 +56,9 @@ export const Main = ({
 export const Footer = ({ children, styles, ...props }: LandmarkProps) => {
   return (
     <Tag as="footer" {...props} styles={styles}>
-      <Tag as="section">{children}</Tag>
+      <Tag as="section">
+        <>{children}</>
+      </Tag>
     </Tag>
   );
 };
@@ -69,7 +73,9 @@ export const Footer = ({ children, styles, ...props }: LandmarkProps) => {
 export const Aside = ({ children, styles, ...props }: LandmarkProps) => {
   return (
     <Tag as="aside" styles={styles} {...props}>
-      <Tag as="section">{children}</Tag>
+      <Tag as="section">
+        <>{children}</>
+      </Tag>
     </Tag>
   );
 };
@@ -84,7 +90,7 @@ export const Aside = ({ children, styles, ...props }: LandmarkProps) => {
 export const Section = ({ children, styles, ...props }: LandmarkProps) => {
   return (
     <Tag as="section" styles={styles} {...props}>
-      {children}
+      <>{children}</>
     </Tag>
   );
 };
@@ -99,7 +105,7 @@ export const Section = ({ children, styles, ...props }: LandmarkProps) => {
 export const Article = ({ children, styles, ...props }: LandmarkProps) => {
   return (
     <Tag as="article" styles={styles} {...props}>
-      {children}
+      <>{children}</>
     </Tag>
   );
 };

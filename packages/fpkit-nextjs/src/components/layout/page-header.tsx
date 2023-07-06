@@ -22,7 +22,7 @@ export function DefaultHeader({
   description,
 }: HeaderProps) {
   return (
-    <Section>
+    <>
       <Title elm="h2">
         <>{title}</>
       </Title>
@@ -42,7 +42,7 @@ export function DefaultHeader({
           <>{linkLabel || "Get Started"}</>
         </Tag>
       </Text>
-    </Section>
+    </>
   );
 }
 

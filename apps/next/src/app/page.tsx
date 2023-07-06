@@ -9,12 +9,10 @@ export default function Home() {
         <Text>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</Text>
       </PG.Header>
       <Main styles={{ minHeight: "50vh" }}>
-        <Section>
-          <Text>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            voluptatum, quibusdam, voluptate, quia quae voluptas quos
-          </Text>
-        </Section>
+        <Text>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          voluptatum, quibusdam, voluptate, quia quae voluptas quos
+        </Text>
       </Main>
     </PG>
   );

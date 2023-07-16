@@ -4,12 +4,13 @@ import React from "react";
 
 export type NavListTypes = {
   pages?: MdxFile[];
+  styles?: {};
 } & FrontMatter;
 
-export const NavList = ({ pages, ...props }: NavListTypes) => {
+export const NavList = ({ pages, styles, ...props }: NavListTypes) => {
   if (!pages) return null;
   return (
-    <Tag as="ul" key={React.useId()} {...props}>
+    <Tag as="ul" styles={styles} key={React.useId()} {...props}>
       {pages?.map((item) => {
         const { route } = item;
         return (

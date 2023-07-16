@@ -5,14 +5,19 @@ import { Header, Section } from "./landmarks";
 export interface HeaderProps {
   title?: React.ReactNode;
   link?: string;
+  styles?: {};
   linkLabel?: React.ReactNode;
   description?: React.ReactNode;
   children?: React.ReactNode;
 }
 
 export type BaseProps = { children: React.ReactNode };
-export const HeaderBase = ({ children }: BaseProps) => {
-  return <Header>{children}</Header>;
+export const HeaderBase = ({ styles, children, ...props }: HeaderProps) => {
+  return (
+    <Header styles={styles} {...props}>
+      {children}
+    </Header>
+  );
 };
 
 export function DefaultHeader({
@@ -51,6 +56,7 @@ export const PageHeader = ({
   link,
   linkLabel,
   description,
+  styles,
   children,
 }: HeaderProps) => {
   if (!title) {

@@ -12,7 +12,7 @@ export const NavBrand = ({ url, logo }: BrandTypes) => {
     <Tag as="div">
       <Title elm="h1" styles={{ "--fs": "1.2rem" }}>
         <Link href={url} styles={{ textTransform: "capitalize" }}>
-          {logo}
+          <>{logo}</>
         </Link>
       </Title>
     </Tag>

@@ -2,7 +2,7 @@ import React from "react";
 
 import { describe, expect, test } from "vitest";
 import { render, screen } from "@testing-library/react";
-import { axe } from "vitest-axe";
+import { axe } from "jest-axe";
 
 // 👉 import ComponentName from "./component-name";
 import NavBrand from "./nav-brand";

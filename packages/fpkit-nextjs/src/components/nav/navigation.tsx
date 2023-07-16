@@ -47,14 +47,15 @@ export interface Brand {
 }
 
 interface NavbarProps extends Brand {
+  styles?: {};
   data: Data[];
 }
 
-export const Navigation: React.FC<NavbarProps> = ({ data, brand }) => {
+export const Navigation: React.FC<NavbarProps> = ({ data, brand, styles }) => {
   const folders = getFolders(data);
 
   return (
-    <Nav>
+    <Nav styles={styles}>
       {!!brand && (
         <Tag as="div">
           <Title elm="h1" styles={{ "--fs": "1.2rem" }}>
@@ -63,7 +64,7 @@ export const Navigation: React.FC<NavbarProps> = ({ data, brand }) => {
               href={brand.url}
               styles={{ textTransform: "capitalize" }}
             >
-              {brand.logo}
+              <>{brand.logo}</>
             </Tag>
           </Title>
         </Tag>
@@ -72,7 +73,7 @@ export const Navigation: React.FC<NavbarProps> = ({ data, brand }) => {
       <Tag as="ul">
         {folders.map((folder) => (
           <NavItem route={folder.route} key={folder.name}>
-            {folder.name}
+            <>{folder.name}</>
           </NavItem>
         ))}
       </Tag>

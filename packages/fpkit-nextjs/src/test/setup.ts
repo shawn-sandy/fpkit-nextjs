@@ -3,6 +3,7 @@ import { expect, afterEach } from "vitest";
 import { cleanup } from "@testing-library/react";
 import * as matchers from "vitest-axe/matchers";
 import "vitest-axe/extend-expect";
+expect.extend(matchers);
 
 // extends Vitest's expect method with methods from react-testing-library
 expect.extend(matchers);
@@ -11,3 +12,5 @@ expect.extend(matchers);
 afterEach(() => {
   cleanup();
 });
+
+// vitest.config.js

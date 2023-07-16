@@ -7,6 +7,7 @@ export type ArticleListProps = {
   route: string;
   linkText?: string;
   img?: string;
+  styles?: {};
 };
 
 export const ArticleList = ({
@@ -15,9 +16,10 @@ export const ArticleList = ({
   linkText,
   route,
   img,
+  styles,
 }: ArticleListProps) => {
   return (
-    <Article>
+    <Article styles={styles}>
       {!!img && (
         <Link href={route} rel="Cover image">
           <Tag as="figure">

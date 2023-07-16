@@ -15,6 +15,10 @@ export type PageListTypes = {
    * An array of pages to render.
    */
   data: Page[];
+  /**
+   * An optional object containing custom styles to apply to the component.
+   */
+  styles?: {};
 };
 
 /*
@@ -28,7 +32,7 @@ export type PageListTypes = {
  * Maps over the array of pages and renders an <ArticleList> component for each page.
  * @example <PageList data={pages} />
  */
-export const PageList = ({ data }: PageListTypes) => {
+export const PageList = ({ data, styles, ...props }: PageListTypes) => {
   if (data.length <= 0) return null;
 
   return (
@@ -42,6 +46,8 @@ export const PageList = ({ data }: PageListTypes) => {
             route={page.route}
             // @ts-ignore
             description={page?.frontMatter?.description}
+            styles={styles}
+            {...props}
           />
           <hr />
         </>

@@ -17,4 +17,5 @@ export default defineConfig({
   format: ["esm", "cjs"],
   minify: true,
   dts: true,
+  include: ["./src/test/setup.ts"],
 });

@@ -22,7 +22,7 @@
     "preview": "vite preview",
     "package": "tsc && tsup --dts",
     "package:watch": "tsc && tsup --watch --dts",
-    "test": "vitest run --root=src",
+    "test": "vitest run",
     "test:watch": "vitest",
     "test:ui": "vitest --ui",
     "test:ci": "c8 vitest --ci --coverage",

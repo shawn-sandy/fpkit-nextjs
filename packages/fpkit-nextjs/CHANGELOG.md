@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.5](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.2.4...v0.2.5) (2023-07-16)
+
+### Bug Fixes
+
+- **test.tsx:** change import statement from "@fpkit/nextra" to "@fpkit/nextjs" to fix module not found error ([395de8e](https://github.com/shawn-sandy/fpkit-nextjs/commit/395de8e10b662413f50a922e32798a2bcfa0ad92))
+
+### Features
+
+- **layout.tsx:** add support for a navbar component in the root layout to improve navigation ([8fe03d5](https://github.com/shawn-sandy/fpkit-nextjs/commit/8fe03d556594700a38e7d127ea8629f762dc165a))
+- **pg.tsx:** pass orgName and copyInfo props to PageFooter component to display organization name and copy information in the footer ([71ceda0](https://github.com/shawn-sandy/fpkit-nextjs/commit/71ceda014ac41cde58436f8f552542282f97ea08))
+
 ## [0.2.4](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.2.3...v0.2.4) (2023-06-20)
 
 ### Features

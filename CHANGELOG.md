@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.5](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.2.4...v0.2.5) (2023-07-16)
+
+### Bug Fixes
+
+- **test.tsx:** change import statement from "@fpkit/nextra" to "@fpkit/nextjs" to fix module not found error ([395de8e](https://github.com/shawn-sandy/fpkit-nextjs/commit/395de8e10b662413f50a922e32798a2bcfa0ad92))
+
+### Features
+
+- 🏗️ nexjs-kit ewexample ([8741d64](https://github.com/shawn-sandy/fpkit-nextjs/commit/8741d64f8393c9f820a63c8e495a144295df6160))
+- 🏗️ nexjs-kit ewexample ([e832c6b](https://github.com/shawn-sandy/fpkit-nextjs/commit/e832c6bb4e5e2a26e94c0c380e4f5417ae67837b))
+- 🏗️ nexjs/kit starter ([3f1b73a](https://github.com/shawn-sandy/fpkit-nextjs/commit/3f1b73ada38a83f81dc8f63a2fbd25b7ddd514b8))
+- **index.tsx:** create a new file for custom theme implementation ([de0cfb5](https://github.com/shawn-sandy/fpkit-nextjs/commit/de0cfb573c279b140842dd83193e5678cd5ad376))
+- **index:** 🚧 add navigation bar with links to Home, Blog, and About pages ([007831c](https://github.com/shawn-sandy/fpkit-nextjs/commit/007831c4f6a339d2624a99a4c49516ef036307d1))
+- **layout.tsx:** add support for a navbar component in the root layout to improve navigation ([8fe03d5](https://github.com/shawn-sandy/fpkit-nextjs/commit/8fe03d556594700a38e7d127ea8629f762dc165a))
+- **pg.tsx:** pass orgName and copyInfo props to PageFooter component to display organization name and copy information in the footer ([71ceda0](https://github.com/shawn-sandy/fpkit-nextjs/commit/71ceda014ac41cde58436f8f552542282f97ea08))
+
 ## [0.2.4](https://github.com/shawn-sandy/fpkit-nextjs/compare/v0.2.3...v0.2.4) (2023-06-20)
 
 ### Features

@@ -13,6 +13,7 @@ describe("App renders correctly", () => {
     render(<Toc items={headings} />);
     const toc = screen.getByRole("list");
     expect(toc).toBeDefined();
+    // @ts-ignore
     expect(await axe(toc)).toHaveNoViolations();
     expect(toc).toMatchSnapshot();
   });

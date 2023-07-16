@@ -23,6 +23,7 @@ describe("Nav renders correctly", () => {
     expect(nav).toBeDefined();
     expect(list).toBeDefined();
     expect(links).toHaveLength(navListItems.length);
+    // @ts-ignore
     expect(await axe(nav)).toHaveNoViolations();
     expect(nav).toMatchSnapshot();
   });

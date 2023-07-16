@@ -9,6 +9,7 @@ import Navigation from "./navigation";
 // replace Component with your component name
 const meta: Meta<typeof Navigation> = {
   title: "Nextra Components/Navigation",
+  // @ts-ignore
   component: Navigation,
   // @ts-ignore
   argTypes: {},
@@ -114,6 +115,7 @@ export const NavigationBar: Story = {
 export const BrandedNavigationBar: Story = {
   args: {
     ...NavigationBar.args,
+    // @ts-ignore
     brand: branding,
   },
   play: async ({ canvasElement }) => {

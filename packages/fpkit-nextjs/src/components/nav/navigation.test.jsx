@@ -31,6 +31,7 @@ describe("Navigation", () => {
 
     expect(brand).toBeDefined();
     expect(brand).toMatchSnapshot();
+    // @ts-ignore
     expect(await axe(navigation)).toHaveNoViolations();
     expect(navigation).toMatchSnapshot();
   });

@@ -10,6 +10,7 @@ describe("App renders correctly", () => {
     render(<Nav>Link</Nav>);
     const nav = screen.getByRole("navigation");
     expect(nav).toBeDefined();
+    // @ts-ignore
     expect(await axe(nav)).toHaveNoViolations();
     expect(nav).toMatchSnapshot();
   });

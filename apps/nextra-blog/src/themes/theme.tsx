@@ -1,7 +1,7 @@
 import type { NextraThemeLayoutProps } from "nextra";
 import Head from "next/head";
 import React from "react";
-
+// NOTE imports from @fpkit/nextjs
 import {
   PageMain,
   PageHeader,
@@ -29,6 +29,7 @@ export default function Layout({
   const latestPosts = FilterMdxPages(pageMap);
   const pages = FilterPageType(pageMap);
 
+  // TODO move to components
   const SideBar = () => {
     return (
       <>

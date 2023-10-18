@@ -30,18 +30,18 @@
     "trash": "trash 'libs'"
   },
   "dependencies": {
-    "@fpkit/react": "^0.3.3",
-    "@shawnsandy/first-paint": "^2.18.1",
-    "next": "^13.4.17",
-    "nextra": "^2.11.0",
-    "nextra-theme-blog": "^2.11.0",
+    "@fpkit/react": "^0.3.17",
+    "@shawnsandy/first-paint": "^2.18.7",
+    "next": "^13.5.2",
+    "nextra": "^2.12.3",
+    "nextra-theme-blog": "^2.12.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@babel/plugin-syntax-import-meta": "^7.10.4",
-    "@babel/preset-env": "^7.22.10",
-    "@babel/preset-react": "^7.22.5",
+    "@babel/preset-env": "^7.22.20",
+    "@babel/preset-react": "^7.22.15",
     "@babel/preset-typescript": "^7.22.5",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^14.0.0",
